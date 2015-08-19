@@ -1,3 +1,18 @@
+
+body {
+    font-family: 'Helvetica Neue', Roboto, "Calibri", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+	color: #555;
+	margin: 40px;
+	padding: 0;
+	background-color: white;
+	}
+
+h1 {
+	font-weight: 300;
+	}
 h2 {
 	margin-top: 3em;
 	margin-bottom: 0em;
@@ -27,6 +42,10 @@ del {
 	color: silver; 
 	}
 
+a {
+	text-decoration: none;
+	}
+	
 figure { 
 	margin-bottom: 2em; 
 	text-align: center;
