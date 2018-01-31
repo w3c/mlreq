@@ -1,27 +1,14 @@
 
-body {
-    font-family: 'Helvetica Neue', Roboto, "Segoe UI", "Calibri", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.75;
-	color: #555;
-	margin: 40px;
-	padding: 0;
-	background-color: white;
-	}
 
-h1 {
-	font-weight: 300;
-	}
 h2 {
-	margin-top: 3em;
-	margin-bottom: 0em;
+	margin-top: 4em !important;
+	margin-bottom: 0em !important;
 	}
 .head h2, #abstract h2, #sotd h2 {
-	margin-top: 0;
+	margin-top: 0 !important;
 	}
 h3 {
-	margin-top: 3em;
+	margin-top: 3em !important;
 	}
 h4  { 
 	font-size: 100%; 
@@ -42,10 +29,6 @@ del {
 	color: silver; 
 	}
 
-a {
-	text-decoration: none;
-	}
-	
 figure { 
 	margin-bottom: 2em; 
 	text-align: center;
@@ -99,19 +82,9 @@ samp, kbd {
 	font-size: 85%;
 	letter-spacing:0.03em;
 	}
-	
-
-
-
-
-.tab-format {
-	margin-left: 10%;
-	}
-table td {
-	border: 1px solid #ddd;
-	padding: 10px;
-	}
-.exampleList {
-	float: left; 
-	margin:10px;
-	}
+.prompt {
+    font-style: italic;
+    color: #aaa;
+    font-size: 90%;
+    margin-bottom: 4em;
+}
