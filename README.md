@@ -31,7 +31,7 @@ Group _members_ are expert contributors who participate actively in producing th
 ### Links
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=mongolian)
 - [Github issues](https://github.com/w3c/mlreq/issues)
-- [Home Page](https://w3c.github.io/alreq/homepage/)
+- [Home Page](https://w3c.github.io/mlreq/homepage/)
 - [Charter](http://w3c.github.io/mlreq/charter/) (proposed)
 - Action tracker (tbd)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
