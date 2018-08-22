@@ -1,12 +1,12 @@
 # Mongolian Layout Task Force
 
-This group is planned, but not yet active. It will exist to explore gaps and requirements for support of languages using the traditional Mongolian script on the Web and in eBooks. Over a couple of years there have been lengthy discussions about the Mongolian encoding model on the list used by this group. Those discussions are now being driven by the Unicode Consortium.
+This group is planned, but not yet active. It will explore gaps and requirements for support of languages using the traditional Mongolian script on the Web and in Digital Publications. Over a couple of years there have been lengthy discussions about the Mongolian encoding model on the list used by this group. Those discussions are now being driven by the Unicode Consortium.
 
-It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
+A significant problem faced by the Web is that experts don't know how to tell the W3C what problems exist for support of their script or language, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem.
 
-Some experts may go a step further, and contribute to a gap-analysis or requirements document.
+Some experts will go a step further, and contribute to a gap-analysis or requirements document, or to other documents produced by the group.
 
-Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.
+Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work supports the development of the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which indicates hot-spots for language support. The focus is especially on typographic features for which information in English is hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
 
 ### Documents
 - [Mongolian Gap Analysis](https://w3c.github.io/mlreq/gap-analysis/) (template only)
@@ -24,14 +24,13 @@ You can find a list of open issues, including those from W3C Working Groups, on 
 
 ### Contributing
 
-All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
+All contributors must read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
+Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in any meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
 ### Links
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=mongolian)
 - [Github issues](https://github.com/w3c/mlreq/issues)
-- [Home Page](https://w3c.github.io/mlreq/homepage/)
 - [Charter](http://w3c.github.io/mlreq/charter/) (proposed)
 - Action tracker (tbd)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
