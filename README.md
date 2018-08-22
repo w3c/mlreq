@@ -1,4 +1,4 @@
-# Mongolian Layout Task Force
+# Mongolian Layout Task Force (mlreq)
 
 This group is planned, but not yet active. It will explore gaps and requirements for support of languages using the traditional Mongolian script on the Web and in Digital Publications. Over a couple of years there have been lengthy discussions about the Mongolian encoding model on the list used by this group. Those discussions are now being driven by the Unicode Consortium.
 
