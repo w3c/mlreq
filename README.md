@@ -10,7 +10,7 @@ Topics for discussion are suggested by [the gap-analysis template](http://w3c.gi
 
 ### Documents
 - [Mongolian Gap Analysis](https://w3c.github.io/mlreq/gap-analysis/) (template only)
-- [Mongolian Layout Requirements](https://w3c.github.io/mlreq/) (template only)
+- [Mongolian Layout Requirements](https://w3c.github.io/mlreq/) (very early draft only)
 - [Mongolian variant forms](https://r12a.github.io/mongolian-variants/) (tracks work on variant encoding discussions)
 - [Encoding discussion document log](https://w3c.github.io/mlreq/variants/document-log.html)
 
