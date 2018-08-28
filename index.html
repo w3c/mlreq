@@ -25,9 +25,13 @@
 
       // editors, add as many as you like
       // only "name" is required
+      authors:  [
+        { name: "Nasun-urt", mailto: "tbd", company: "tbd" },
+        { name: "Huchitu", mailto: "tbd", company: "tbd" }
+      ],
+      
       editors:  [
-        { name: "This person", mailto: "them@example.com", company: "CompanyName" },
-        { name: "That person", mailto: "them@example.com", company: "CompanyName" },
+        { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C" }
       ],
 
 
@@ -66,7 +70,7 @@
 
   <div id="sotd">
     <p>This document describes the basic requirements for Mongolian script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications about how to support users of Mongolian script languages. Currently the document focuses on the Traditional Mongolian script as used for Mongolian. The information here is developed in conjunction with a <a href="gap-analysis/">document that summarises gaps</a> in support on the Web for Mongolian.</p>
-<p>The editor's draft of this document is being developed by the <a href="http://www.w3.org/International/groups/mongolian-layout/">Mongolian Layout Task Force</a>, part of the W3C <a href="http://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="http://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
+<p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/mlreq/">Mongolian Layout Task Force</a>, part of the W3C <a href="http://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="http://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
 
     <div class="note">
       <p data-lang="en" style="font-weight: bold; font-size: 120%">Sending comments on this document</p>
@@ -83,7 +87,41 @@
     <section id="h_about_this_document">
       <h3>About this document</h3>
 
-      <p class="prompt">Some text goes here.</p>
+      <p>This standard describes the Mongolian format standard, which can be used and achieve implementation in the CSS, SVG and XSL - F0 , and it can also be used as the reference documents for office software. It mainly focuses on the Mongolian script and its features, the basic module of Mongolian text , page layout, new CSS standard and accessories.</p>
+      
+      
+      <section id="scope">
+      <h4>Scope</h4>
+      <p>The document describes the rules of composition of various types of text written in traditional Mongolian script and pictures, etc. in various network formats. The purpose of this standard is not to provide complete solution, but to describe the important basic information needed in the implementation in a computer.</p>
+<p>The main purpose of this document is to provide standardization and guiding rules for the display and application of traditional Mongolian script in the web. However, the more complex layout requirements such as paper layout are not included in this document. Thus, this document includes the most basic rules of display of page and characters of the traditional Mongolian script, aiming at formulating the corresponding standards of web display and application of Mongolian script for the web application vendors to follow this standard of display and application of Mongolian script in the web.</p>
+      
+      </section>
+      
+      
+      <section id="terminology">
+      <h4>Terminology</h4>
+      <p>The following terms and definitions apply to this standard.</p>
+      <dl>
+      <dt>Composition</dt>
+      <dd>The composition in the W3C Standard Format includes Mongolian characters, punctuation marks, and other marks related to the script.</dd>
+      <dt>Mongolian Space</dt>
+      <dd>NARROW NO-BREAK SPACE，U+202F Official term should be: NARROW NO - BREAK SPACE, code: U + 202F Two spaces are used in Mongolian, U + 0020 and U + 202 F. One is a common space: U + 0020, and the other is a Mongolian space U + 202 F.</dd>
+      <dt>Mongolian Symbols</dt>
+      <dd>It refers to various symbols used in Mongolian text. In formulating the Mongolian coding standard, some of the codes is used in the coding area of the Mongolian standard, while the rest are symbols used in the scripts of other ethnic groups, due to the fact that some symbols are borrowed from other ethnic groups . </dd>
+      <dt>Baseline</dt>
+      <dd>Baseline in Mongolian is called “Nirogo”. Mongolian writing is generally aligned to the baseline. </dd>
+      <dt>Writing Direction</dt>
+      <dd>It refers to the default direction of writing. For example, English writing direction is horizontal from top to bottom, while the Mongolian writing is vertical from left to right. </dd>
+      <dt>Text Width</dt>
+      <dd>Text width indicates the distance from the word at the left start to the word at the right ead in a line in Mongolian, in the equivalent of the height of the horizontal  English or Chinese text writing. </dd>
+      <dt>Text Height</dt>
+      <dd>Text height refers to the height of a Mongolian word, in equivalent of the width of the horizontal English or Chinese text writing. </dd>
+      <dt>Text Spacing</dt>
+      <dd>Text spacing refers to the gap between the Mongolian words.</dd>
+      <dt>Leftline and Rightline</dt>
+      <dd>As the Mongolian writing is vertical, the right line, the left line and the line through is equivalent to the underline and overline in the horizontal English or Chinese text writing . </dd>
+      </dl>      
+      </section>
     </section>
 
   <section id="h_gap_analysis">
@@ -98,14 +136,15 @@
   <section id="h_info_requests">
   <h3>Other related resources</h3>
 
-    <p>The document <a href="https://w3c.github.io/typography/">International text layout and typography index</a> (known informally as the text layout index) points to this document and others, and provides a central location for developers and implementers to find information related to various scripts.</p>
+    <p>Initial content for this document drew on Chinese standards work. (EXPAND)</p>
+<p>The document <a href="https://w3c.github.io/typography/">International text layout and typography index</a> (known informally as the text layout index) points to this document and others, and provides a central location for developers and implementers to find information related to various scripts.</p>
 <p>The W3C also maintains a tracking system that  has links to github issues in W3C repositories. There are separate links for (a) requests from developers to the user community for information about how scripts/languages work, (b) issues raised against a spec, and (c) browser bugs.  For example, you can find out <a href="http://w3c.github.io/i18n-activity/textlayout/?filter=type-info-request">what information developers are currently seeking</a>, and the resulting list can also be filtered by script.</p>
 </section>
   </section>
   
   
 <section id="h_script_overview">
-  <h2>Mongolian Script Overview</h2>
+<h2>Mongolian Script Overview</h2>
     <p>This section introduces the Mongolian script in general terms, providing some context and terminology that is useful in the remainder of the document. If possible, it's best not to introduce actual requirements in this section, but to leave those and detailed descriptions of expected typography to the sections that follow.</p>
     <p class="prompt">Is the script an alphabet, abugida, abjad, syllabary, etc? What are the basic set of characters for major languages written in the script? How does the script work? Are glyphs in the script regularly joined up, as in Arabic, or not? Are there other special features, such as stacking, syllabic clusters and conjuncts, etc. Is there a set of characters used for special purposes, such as transcription? Are multiple scripts used? </p>
     <p class="prompt">What are the basic directional features of the script? Is the script written right-to-left, or bidirectionally? Is is written vertically? If so, can it also be written horizontally, what is the frequency with which it is written one way or the other, and which side is the first line on?</p>
@@ -125,31 +164,81 @@
 <section id="h_glyphs">
     <h3>Glyph control</h3>
     <p class="prompt">Does the script in question require additional features to support alterations to the position or shape of glyphs, for example adjusting the distance between the base text and diacritics, or changing the glyphs used in a systematic way?  <a href="../index#glyphs_diacritics">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Atype-info-request">check for currently needed data</a>.</p>
-  </section>
+</section>
     
 
 <section id="h_cursive">
     <h3>Cursive text</h3>
     <p class="prompt"> If this script is cursive (eg. Arabic, N'Ko, Syriac, Mongolian, etc), are there problems or needed features related to the handling of cursive text? Do cursive links break if parts of a word are marked up or styled? Do Unicode joiner and non-joiner characters behave as expected?  <a href="http://w3c.github.io/typography/index#cursive">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Atype-info-request">check for currently needed data</a>.</p>
-  </section>
+</section>
     
 
     <section id="h_punctuation">
       <h3>Punctuation</h3>
       <p class="prompt">What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking, etc.) <a href="index#punctuation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apunctuation%20label%3Ainfo-req">check for currently needed data</a>.</p>
+      
+      <section id="punctuation_rules">
+      <h4>Punctuation rules</h4>
+      <p>There are some specific requirements while using the Mongolian punctuation:</p>
+<ol>
+<li>Commas, periods, exclamation marks, question marks, or colons cannot be used at the beginning of a line.</li>
+<li>Opening bracket can't be used at the end of a line.</li>
+<li>Closing bracket cannot be used at the beginning of a line.</li>
+<li>The colon and  &quot;《&quot; of the opening bracket cannot be used separately, which means they must be used together and they are not allowed to be used at the beginning of a line. </li>
+<li>Dash consists of two long separatrix, which cannot be separated, i.e. One is used at the beginning of a line and the other is used at the end. However, it is allowed to appear at the beginning of the line when a paragraph begins.</li>
+<li><p>Mongolian names of Mongolian punctuation and writing direction are as shown in <a href="#fig_punctuation_sample"></a>, namely the writing direction is the same as that in the graph.</p>
+<figure id="fig_punctuation_sample">
+<p><img src="images/punctuation_sample.png"/></p>
+<figcaption>Mongolian punctuation sample</figcaption>
+</figure>
+</li>
+<li>
+<p>All the punctuation in Mongolian &quot;baseline&quot; should keep in accordance with alignment of the midline, as shown in <a href="#fig_punctuation_text_alignment"></a>.</p>
+<figure id="fig_punctuation_text_alignment">
+<p><img src="images/punctuation_text_alignment.png"/></p>
+<figcaption>Alignment relationship between punctuation and Mongolian script text.</figcaption>
+</figure>
+</li>
+</ol>
+</section>
+
+
+
+<section id="mongolian_space">
+<h4>Display rules for Mongolian space</h4>
+<p>Mongolian case supplementary component display rules and Mongolian space   (0x202f) processing.</p>
+<p>The inputting of Mongolian case supplementary component into the computer requires the Mongolian space 0x202F first, and then the corresponding Mongolian script. For example, the internal code of the word “<span lang="mn"> ᠤᠨ</span>” is: 0x202F  0x1824 0x1828, among which 0x202F is called Mongolian space, inputted before the Mongolian case supplementary component .</p>
+<figure id="fig_punctuation_text_alignment2">
+<p><img src="images/mongolian_space.png"/></p>
+<figcaption>The difference between the common space and Mongolian space.</figcaption>
+</figure>
+<p>Mongolian space（0x202F）and case supplementary component cannot appear at the beginning of a line, for example, <a href="#fig_correct_mongolian_space"></a> is the correct processing method and <a href="#fig_incorrect_mongolian_space"></a> is the wrong processing method.</p>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: flex-end;">
+<figure id="fig_correct_mongolian_space">
+<p><img src="images/correct_mongolian_space.png"/></p>
+<figcaption>Correct processing.</figcaption>
+</figure>
+<figure id="fig_incorrect_mongolian_space">
+<p><img src="images/incorrect_mongolian_space.png"/></p>
+<figcaption>Wrong processing.</figcaption>
+</figure>
+</div>
+<p>&nbsp;</p>
+
+</section>
     </section>
 
     <section id="h_quotations">
-      <h3>Quotations</h3>
+    <h3>Quotations</h3>
       <p class="prompt">What is the expected behaviour for quotations marks, especially when nested? Should block quotes be indented or handled specially? <a href="index#quotations">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aquotations%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
+</section>
 
     <section id="h_symbols">
       <h3>Symbols</h3>
       <p class="prompt">Does the script use special symbols that are worth noting, eg. head marks in Tibetan?</p>
     </section>
 
-    <section id="h_digits">
+<section id="h_digits">
       <h3>Numbers, dates, etc.</h3>
       <p class="prompt">Does the script have its own set of number digits? How are they used, and how frequently? Does the numbering system use base-10, or some other type of base? Does it have special formatting patterns (eg. 12,34,000 in India). What about date/time formats and selection – are non-Gregorian calendars used? How are percent signs used, and do numbers have special decorations (like in Ethiopic or Syriac)?</p>
     </section>
@@ -157,17 +246,65 @@
     <section id="h_segmentation">
       <h3>Text boundaries &amp; selection</h3>
       <p class="prompt">What are the basic units of the text, and how are they demarcated, eg. characters, character sequences, syllables, or words?  Are spaces or different symbols used between 'words'? Is it important to treat clusters of characters as a single unit? What should happen if you double- or triple-click in the text, whether or not 'words' are separated by spaces? <a href="index#graphemes">See available information</a>.</p>
+      
+      
+      <section id="selection_rules">
+      <h4>Selection rules</h4>
+      <p>The selected midcourt line must overlap the Mongolian &quot;baseline&quot;, as shown in <a href="#fig_selection_single_line"></a> Multi-line selection must follow the writing direction of Mongolian script, i.e., text direction from top to bottom and from left to right, as shown in <a href="#fig_selection_multiline"></a>.</p>
+    <figure id="fig_selection_single_line">
+    <p><img src="images/selection_single_line.png" alt=" "/></p>
+    <figcaption>The effect of choosing a single-line text.</figcaption>
+    </figure>
+    <p>&nbsp;</p>
+    <figure id="fig_selection_multiline">
+    <p><img src="images/selection_multiline.png" alt=" "/></p>
+    <figcaption>The effect of choosing multi lines.</figcaption>
+    </figure>
+    </section>
+    
+    
+      <section id="cursor_movement">
+      <h4>Cursor movement rules</h4>
+       <p>There are cursor movement keys including “←”, “→”, “↑”, “↓”, “Page Up”, “Page Down”, “Home” and “End” in the keyboard. Striking these keys needs to follow the writing direction of Mongolian script from top to bottom and from left to right. For example, the cursor moves to the left after striking the key of “←”; the cursor moves to the right when striking the key of “→”. The cursor moves down after striking the key of “↓”. When the cursor moves to the bottom of the current line, press the key of “↓” again, the cursor will move right to the top of the next line, the case of the key “↑” is opposite  , as shown in <a href="#fig_cursor_movement"></a>.</p>
+    <figure id="fig_cursor_movement.png">
+    <p><img src="images/cursor_movement.png" alt=" "/></p>
+    <figcaption>Illustration of cursor movement.</figcaption>
+    </figure>
+    </section>
+    
+    
+      <section id="mouse_pointer">
+      <h4>Mouse pointer rules</h4>
+       <p>The mouse pointer in text editing is shown in <a href="#fig_mouse_pointer"></a>. </p>
+<p>Scrollbar will scroll left and right when mouse wheel is scrolling, that is, the scrollbar will move left or the text will move right when mouse wheel is scrolling forward; the scrollbar will move right or the text will move left when mouse wheel is scrolling backward.</p>
+    <figure id="fig_mouse_pointer">
+    <p><img src="images/mouse_pointer.png" alt=" "/></p>
+    <figcaption>Illustration of cursor movement.</figcaption>
+    </figure>
+    
+    <p>The cursor shape in text editing is shown in <a href="#fig_mouse_pointer"></a>,The cursor must be aligned at the base on the midpoint of the “baseline” of Mongolian script, that is, the midpoint of the “baseline” of Mongolian script is overlapping the midpoint of the cursor, with the length no longer than the middle line between the two lines of the text, as shown in the <a href="#fig_cursor_shape"></a>.</p>
+    <figure id="fig_cursor_shape">
+    <p><img src="images/cursor_shape.png" alt=" "/></p>
+    <figcaption>Illustration of cursor movement.</figcaption>
+    </figure>
+    </section>
+    
+    
+    
+    
+    
+    
     </section>
 
     <section id="h_transforms">
-      <h3>Transforming characters</h3>
+    <h3>Transforming characters</h3>
       <p class="prompt">What transformations does your script need? For example, does your script convert letters to uppercase, capitalised and lowercase alternatives? Do you need to to convert between half-width and full-width presentation forms? <a href="index#transforming_characters">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acharacter-transforms%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
+</section>
 
     <section id="h_inline_spacing">
       <h3>Inter-character spacing</h3>
       <p class="prompt">Some scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts.  Can you provide information? Are there requirements for this script that we should add? <span class="status_prompt"> (For justification related spacing, see below.)</span> See <a href="index#letter_spacing">available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-spacing%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
+   </section>
 
     <section id="h_ruby">
       <h3>Ruby annotation</h3>
@@ -177,6 +314,16 @@
     <section id="h_text_decoration">
       <h3>Text decoration</h3>
       <p class="prompt">Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the position relative to the text may vary depending on the script.  <span class="status_prompt"> Do you need support for special line shapes or widths? </span>What about vertical text? <a href="index#text_decoration">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Ainfo-req">check for currently needed data</a>.</p>
+    <p>Right line in Mongolian writing is on the right of the text, similar to the underline of horizontal English and Chinese text . The left line is on the left of the text, similar to the overline of horizontal English and Chinese text. The strikethrough is a “baseline”-centered vertical line as shown in <a href="#fig_text_decoration"></a></p>
+    <figure id="fig_text_decoration">
+    <p><img src="images/text_decoration.png" alt=" "/></p>
+    <figcaption>Illustration of the right line, the left line and the strikethrough.</figcaption>
+    </figure>
+    <p>The underline, the overline and the strikethrough in mixed composition with other languages are shown in <a href="#fig_text_decoration_mixed"></a>:</p>
+    <figure id="fig_text_decoration_mixed">
+    <p><img src="images/text_decoration_mixed.png" alt=" "/></p>
+    <figcaption>The underline, the overline and the strikethrough as mixed with other languages.</figcaption>
+    </figure>
     </section>
 
     <section id="h_emphasis">
@@ -198,22 +345,41 @@
 <section id="otherinline">
     <h3>Other inline features</h3>
     <p class="prompt">Does the script/language have special ways of representing inline notes (such as wakiten or kumimoji in Japanese) or other special inline features that need to be supported? <a href="http://w3c.github.io/typography/index#other_inline_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
+    
+    <section id="width_height_spacing">
+    <h4>Mongolian text width, height and spacing</h4>
+    <p>Due to the different height of Mongolian text, in order to ensure that every character is in  fully displayed and the whole word looks beautiful, the height of each letter must keep in balance. The spaces between words must be different from the common gaps whose code point is <span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span>. See <a href="#fig_width_height_spacing"></a>:</p>
+    <figure id="fig_width_height_spacing">
+    <p><img src="images/width_height_spacing.png" alt=" "/></p>
+    <figcaption>The height, width and spacing of Mongolian words.</figcaption>
+    </figure>
   </section>
 
 
-  </section>
+</section>
+</section>
 
 
 
 
 
-
-  <section id="h_lines_and_paragraphs">
+<section id="h_lines_and_paragraphs">
 <h2>Lines and Paragraphs</h2>
 
     <section id="h_line_breaking">
       <h3>Line breaking</h3>
       <p class="prompt">What are the important features about how  script wraps when it hits the end of a line?   Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan and Javanese)? What characters should not appear at the end or start of a line, and what should be done to prevent that? <a href="index#line_breaking">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Ainfo-req">check for currently needed data</a>.</p>
+      <p>Newline does not allow a word break and a sign of a new line of all words are   space, punctuation or another language. <a href="#fig_newline_correct"></a> is the correct newline without breaking the Mongolian words. <a href="#fig_newline_incorrect"></a> is the wrong newline for breaking “<img src="images/text001.png" alt=""/>” and “<img src="images/text002.png" alt=""/>”.</p>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+<figure id="fig_newline_correct">
+<p><img src="images/newline_correct.png"/></p>
+<figcaption>Correct newline.</figcaption>
+</figure>
+<figure id="fig_newline_incorrect">
+<p><img src="images/newline_incorrect.png"/></p>
+<figcaption>Wrong newline.</figcaption>
+</figure>
+</div>
     </section>
 
     <section id="h_hyphenation">
@@ -226,11 +392,29 @@
       <p class="prompt"> Is it normal to have flush lines down both sides of the text body (ie. full justification)? If so, what rules are used by the script to resolve the positioning of characters on a line? Does the script conform to a grid pattern? 
         Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? <a href="index#justification">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Ainfo-req">check for currently needed data</a>.</p>
     </section>
+
+
+    <section id="h_textalign">
+      <h3>Text alignment</h3>
+      <p>Text alignment includes &quot;left alignment&quot;, &quot;horizontal center&quot;, “right alignment ” as well as “top alignment”, “vertical center”, “bottom alignment”and “top-bottom alignment”. &quot;Left alignment &quot;, &quot;horizontal center&quot; and “right alignment” are the alignment rules inside a line. “Top alignment”, “horizontal center”, “bottom alignment” and “top-bottom alignment” are the alignment rules in a page or a paragraph of a multi-line text. </p>
+<p>Among &quot;Left alignment&quot;, &quot;horizontal center&quot;, and “right alignment”, “horizontal center” is a default option which means that Mongolian script will align basing on its “baseline” for axis. “Left alignment” means that the text will move left in a certain distance, which shows obvious difference compared with the text after setting “horizontal center”. “Right alignment” means that the text will move right in a certain distance after, which shows obvious difference compared with the text after setting “horizontal center”.</p>
+<p>Among “Top alignment”, “vertical center”, “bottom alignment”and “top-bottom alignment”, “top-bottom alignment” is a default option which means that the words in the upper and the lower boundary of a multi-line text in a paragraph or a page are all aligned. And its alignment method is that “spaces” in the text are stretched in the same proportion. “Top alignment” means that the words in the upper boundary of a multi-line text in a paragraph or a page are all aligned without considering the alignment of the lower boundary and stretching the space between words. “Vertical center” means the words in the upper and the lower boundary of a multi-line text in a paragraph or a page do not need to align and leave the same blank under the condition of no-stretching space between words.</p>
+    </section>
+
     <section id="h_counters">
     <h3>Counters, lists, etc</h3>
-    <p class="prompt"><span class="status_prompt">The CSS Counter Styles specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc.The rules plus more counter styles (totalling around 120 for over 30 scripts) are listed in the document <a href="http://w3c.github.io/predefined-counter-styles/">Ready-made Counter Styles</a>. Do these cover your needs?  Are the details correct? Are there other aspects related to counters and lists that need to be addressed?</span> <a href="index#counters">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acounters%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
-  
+    <p>The display of these controls needs paying attention to the direction of the output. That is to say, the  primary display of the number 1, 2, 3. Etc. from left to right. The effect of the following codes is as it is shown in <a href="#fig_lists"></a>, please pay attention to the midcourt line aligning principles.</p>
+ <figure id="fig_lists">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: : center;">
+<p><img src="images/lists_code.png" alt=""/></p>
+<p><img src="images/lists_display.png" alt=""/></p>
+</div>
+<figcaption>Lists.</figcaption>
+</figure>
+   </section>
+
+
+
   
   <section id="h_initial_letter">
     <h3>Initial letter styling</h3>
@@ -240,6 +424,43 @@
   <section id="h_baselines">
     <h3>Baselines</h3>
     <p class="prompt">What are the  requirements for baseline alignment between mixed scripts and in general? <a href="index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Ainfo-req">check for currently needed data</a>.</p>
+    <p>Mongolian is aligned to a "baseline" that runs down the center of the writing, and all  text is aligned to this baseline   as shown in <a href="#fig_baselines"></a>:</p>
+    <figure id="fig_baselines">
+    <p><img src="images/baselines.png" alt=" "/></p>
+    <figcaption>The aligning baseline for Mongolian.</figcaption>
+    </figure>
+    
+    
+  <section id="mixed_arrangement">
+  <h4>Mixed Arrangement Rules with Other Languages</h4>
+  <p>When mixed with other languages, the main consideration should be midcourt line aligning. </p>
+  </section>
+    
+    
+  <section id="mixed_arrangement_alphanum">
+  <h4>Mixed Arrangement Rules with Numbers and Latin </h4>
+  <p>There is no obvious midcourt line in numbers and Latin. Therefore generally, half of the text height is regarded as a midcourt line position. When Mongolian script is mixed with numbers and Latin, the line of half of the text height should be aligned with Mongolian midcourt line. When number’s size is the same as Mongolian’s, it will be slightly larger, so some handling methods should be taken to avoid the problem, such as the methods listed in <a href="#fig_mixed_alphanum"></a>.</p>
+      <figure id="fig_mixed_alphanum">
+    <p><img src="images/mixed_alphanum.png" alt=" "/></p>
+    <figcaption>The mixed arrangement of Mongolian, Latin and numbers.</figcaption>
+    </figure>
+</section>
+    
+    
+  <section id="mixed_arrangement_cjk">
+  <h4>Mixed Arrangement Rules with Chinese and Japanese</h4>
+  <p>The notices of the mixed arrangement with Chinese or Japanese are as the following:</p>
+<ol>
+<li>Chinese and Japanese cannot be displayed in the way of lying down. They must be the same as the display direction of Chinese or Japanese in horizontal.</li>
+<li>The center line of Chinese or Japanese text height (the width in this case) needs to be aligned with the midcourt line of Mongolian script.</li>
+<li>Pay attention to the top alignment and bottom alignment of Mongolian script. In the same line, the mixed display of Mongolian and Chinese needs paying attention to balanced alignment. When displayed, it should stretch space, but empty distance or space should not be added in Chinese text.</li>
+<li> Mongolian is smaller than Chinese or Japanese in the same font size, so some handling methods should be taken to avoid the problem, such as methods listed in <a href="#fig_mixed_cjk"></a>.</li>
+</ol>
+<figure id="fig_mixed_cjk">
+<p><img src="images/mixed_cjk.png" alt=" "/></p>
+    <figcaption>The mixed arrangement of Mongolian and Chinese.</figcaption>
+    </figure>
+</section>
   </section>
   
   <section id="h_other_paragraph">
@@ -250,8 +471,70 @@
 </section>
 
   <section id="h_pages">
-    <h2>Layout &amp; pages</h2>
- 
+  <h2>Layout &amp; pages</h2>
+
+
+<section id="page_layout">
+<h3>General page layout &amp; progression</h3>
+
+    <section id="h_binding">
+    <h4>Bookbinding and the Direction of Page Turning</h4>
+    <p>In general, bookbinding is on the left side, as shown in <a href="#fig_bookbinding"></a>:</p>
+     <figure id="fig_bookbinding">
+    <p><img src="images/bookbinding.png" alt=" "/></p>
+    <figcaption>Bookbinding.</figcaption>
+    </figure>
+    <p>The direction of page turning is to the left hand , as shown in <a href="#fig_page_turning"></a>:</p>
+     <figure id="fig_page_turning">
+    <p><img src="images/page_turning.png" alt=" "/></p>
+    <figcaption>The direction of page turning.</figcaption>
+    </figure>
+    </section>
+
+    <section id="h_paper_direction">
+    <h4>Paper direction</h4>
+    <p>Generally, &quot;horizontal&quot; is the default direction in Mongolian format, as shown in <a href="#fig_paper_direction"></a>.</p>
+     <figure id="fig_paper_direction">
+    <p><img src="images/paper_direction.png" alt=" "/></p>
+    <figcaption>Effect of &quot;Horizontal&quot; paper direction.</figcaption>
+    </figure>
+    </section>
+
+    <section id="h_paper_rolling_direction">
+    <h4>Paper rolling direction</h4>
+    <p>Generally, &quot;horizontal&quot; is the default direction in Mongolian format, as shown in <a href="#fig_paper_rolling_direction"></a>.</p>
+     <figure id="fig_paper_rolling_direction">
+    <p><img src="images/paper_rolling_direction.png" alt=" "/></p>
+    <figcaption>The direction of paper format.</figcaption>
+    </figure>
+    </section>
+
+    <section id="h_scrollbag_direction">
+    <h4>The rolling direction of scroll bars</h4>
+    <p>When there are much more words in the text in excess of the prescribed space size, the scroll bar needs to be displayed.The default display position of the scroll bar is downmost in the corresponding space (The simultaneous display of both horizontal and vertical scroll bars has not been installed).</p>
+     <figure id="fig_scrollbag_direction">
+    <p><img src="images/scrollbag_direction.png" alt=" "/></p>
+    <figcaption>Position and rolling direction of scroll bar.</figcaption>
+    </figure>
+    </section>
+
+
+
+
+    <section id="h_columns">
+    <h3>Columns</h3>
+    <p>In the Mongolian format, page number should be display on the upper side or downside.</p>
+    <figure id="fig_columns">
+    <p><img src="images/columns.png" alt=" "/></p>
+    <figcaption>The effect of 2 columns.</figcaption>
+    </figure>
+   </section>
+
+</section>
+
+
+
+
  <section id="bidilayout">
     <h3>Bidirectional layout</h3>
     <p class="prompt">If this is a RTL or vertically-set writing system, how do you specify the location of objects, text, etc. relative to the flow? Is content mirror-imaged completely in layouts? What other aspects of layout are affected by direction? <a href="http://w3c.github.io/typography/index#direction_agnostic">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Abidi%20label%3Atype-info-request">check for currently needed data</a>.</p>
@@ -262,26 +545,123 @@
 <section id="h_vertical_text">
     <h3>Vertical text</h3>
     <p class="prompt">What are  the requirements for vertically oriented text?  What about if you mix vertical text with scripts that are normally only horizontal? Is it normal to use different characters in vertical vs. horizontal text? Do you expect short numbers, acronyms, etc to run horizontally within a vertical line (tate chu yoko)? <a href="index#vertical_text">See available information</a>.</p>
-    </section>
+    <p>The Mongolian writing direction is shown in  <a href="#fig_writing-direction"></a></p>
+    <figure id="fig_writing_direction">
+    <p><img src="images/writing_direction.png" alt=" "/></p>
+    <figcaption>Mongolian writing direction.</figcaption>
+    </figure>
+</section>
 
-    <section id="h_notes">
+
+
+    <section id="h_tables">
+    <h3>Tables</h3>
+    <p>When setting writing-mode:tb-lr of CSS (grammar will have a little difference according to various browsers), the table will support vertical display feature of Mongolian script.When setting default option for the text in the table, it will display in “horizontal center” state, that is, the upper and the lower center lines of the table cell will align at the center line of “baseline” of Mongolian script, as shown in the <a href="#fig_table"></a>.</p>
+    <figure id="fig_table">
+    <p><img src="images/table.png" alt=" "/></p>
+    <figcaption>The aligning baseline for Mongolian.</figcaption>
+    </figure>
+</section>
+
+
+
+  <section id="h_notes">
     <h3>Notes, footnotes, etc</h3>
     <p class="prompt">Does your script have special requirements for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture? <a href="index#notes_footnotes">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Anotes-footnotes%20label%3Ainfo-req">check for currently needed data</a>.</p>
     </section>
 
     <section id="h_page_numbering">
     <h3>Page numbering, running headers, etc</h3>
-    <p class="prompt">Are there special conventions for page numbering, or the way that running headers and the like are handled? <a href="index#page_numbering_running_headers">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apage-numbering%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
+    <p>In the Mongolian format, page number should be display on the upper side or downside.</p>
+      <figure id="fig_page_numbers">
+    <p><img src="images/page_numbers.png" alt=" "/></p>
+    <figcaption>Adding the horizontal type and number on the page number .</figcaption>
+    </figure>
+   </section>
+
+
+
+
+  <section id="h_input">
+    <h3>User interaction</h3>
+    <p>All controls in input need to adjust according to the characteristics of the vertical typeset of Mongolian script, for example, controls like text and button need to support to enter and display text vertically, among which the cursors in text and password need to conform to the cursor style as shown in the <a href="#fig_input_controls"></a>.</p>
+     <figure id="fig_input_controls">
+    <p><img src="images/input_controls.png" alt=" "/></p>
+    <figcaption>The display of input controls and the alignment of Mongolian script.</figcaption>
+    </figure>
+
+    <section id="select_control">
+    <h4>Select</h4>
+    <p>The select box appeared in the following code of HTML should be as it is shown in <a href="#fig_select_code"></a>. According to default setting, the scroll bar is at the bottom and closes to the leftmost. To see the contents at the back of the list, it scrolls from left to right. The rolling of the mouse wheel should be in accordance with  illustration in <a href="#fig_select_display"></a>. While selecting a column, the selected text and the selected background color should conform to the principle of aligning of the midcourt line. (see the descriptions in <a href="#fig_input_controls"></a>).</p>
+<div style="text-align: center;">
+<figure id="fig_select_code">
+<p><img src="images/select_code.png"/></p>
+<figcaption>Correct newline.</figcaption>
+</figure>
+<figure id="fig_select_display">
+<p><img src="images/select_display.png"/></p>
+<figcaption>Mongolian standard the select box.</figcaption>
+</figure>
+</div>
+</section>
+
+    <section id="textarea_control">
+    <h4>Textarea</h4>
+    <p>The label control mainly considers text midcourt line aligning principles. ( See the descriptions in TBD). The label display of the following codes is shown in <a href="#fig_label"></a>.</p>
+<figure id="fig_textarea_display">
+<p><img src="images/textarea_display.png"/></p>
+<figcaption>Display status of the standard textarea.</figcaption>
+</figure>
+</section>
+
+    <section id="label_control">
+    <h4>Label</h4>
+    <p>Textarea is an important control, and is required in the text input, edit, and display. Scroll bar rolling accords with requirements of select control in TBD. The display and moving direction of the cursor should be consistent with the standard of cursor movement in TBD. In some browsers, there are functions of stretching the size of textarea. The stretching icon should be in the lower right corner, and the  textarea scaling accords with the mouse dragging. The rows and cols attribute of Textarea is the opposite of those in horizontal. Its specific attributes are as the following: rows {int} : showing the column number and cols {int} : showing the row number </p>
+<figure id="fig_label">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: : center;">
+<p><img src="images/label_code.png" alt=""/></p>
+<p><img src="images/label_display.png" alt=""/></p>
+</div>
+<figcaption>The display of label controls.</figcaption>
+</figure>
+
+</section>
+
+    <section id="fieldset_control">
+    <h4>Fieldset</h4>
+    <p>As shown in <a href="#fig_fieldset"></a>, it is a fieldset, the example fieldset generation with the following codes, the latter figure shows the midcourt line aligning principles.</p>
+<figure id="fig_fieldset">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: : center;">
+<p><img src="images/fieldset_code.png" alt=""/></p>
+<p><img src="images/fieldset_display.png" alt=""/></p>
+</div>
+<figcaption>Fieldset effect.</figcaption>
+</figure>
+
+</section>
+   </section>
 
     <section id="h_pagination">
     <h3>More page layout &amp; pagination</h3>
     <p class="prompt">Some cultures define page areas and page progression direction very differently from those in the West (eg. kihon hanmen in Japanese). Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR? <a href="index#more_page_layout_and_pagination">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apagination%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
+ 
+    <section id="mixed_media">
+    <h4>Mixed arrangement of text and illustrations  (or other non-text objects)</h4>
+    <p>The illustrations here include ordinary picture formats, textboxes, charts, media objects and so on, all of which are called illustration as followed. There are many ways (as shown in  <a href="#fig_mixed_media"></a>) of mixed arrangement of text and illustrations but, no matter which way, some principles need to be obeyed.</p>
+<ol>
+<li>The illustration cannot be rotated, that is, the original illustration is inserted just as it is. The illustration cannot be rotated into the vertical one just because of vertical text.</li>
+<li>The Mongolian script around the inserted illustrations cannot be broken inside the word. The rules of the beginning and end of lines are the same as the original ones.</li>
+</ol>
+    <figure id="fig_mixed_media">
+    <p><img src="images/mixed_media.png" alt=" "/></p>
+    <figcaption>by mixed.</figcaption>
+    </figure>
+</section>
+   </section>
 
 </section>
   <section class="appendix" id="glossary">
-    <h2>Glossary</h2>
+  <h2>Glossary</h2>
 
     <table class="glossary">
       <thead>
@@ -308,10 +688,34 @@
         </tr>
       </tbody>
     </table>
-  </section>
+</section>
+
+
+<section class="appendix" id="css_suggestions">
+  <h2>Suggestions about Formulating New CSS Standard</h2>
+
+<ol>
+<li>When Mongolian webpage is created, the page direction should be designated: CSS-MONGOLIAN-LAYOUT:Y. Designating the option means that all page elements should be arranged in accordance with the requirement of vertical column script. Meanwhile, there are the main requirements: script should conform to the habit of Mongolian writing -----arrangement from top to bottom and from left to right (see the descriptions in 2.2.3); textboxes, buttons and list order are all displayed in vertical column; pictures, videos and the other third party controls do not need to accord with the requirement of vertical column.</li>
+<li>In mixed arrangement with other languages, Mongolian text is X larger than the other texts. Designating the option requires that the size of Mongolian in all control texts should be automatically X larger than the size of the text of other scripts or X smaller under the condition of using minus.</li>
+<li>When arranged with other languages, Mongolian should follow the midcourt line aligning principles as the following. when the option CSS-MONGOLIAN-MOVE- WAIST:X px is designated, Mongolian text in all control texts should move X px to left or right so that it can be aligned with the midcourt line of other texts. Because the midcourt line cannot be aligned well under the condition, the option needs to be set.</li>
+<li>When arranged with other languages, Mongolian font should be set as  CSS-MONGOLIAN-FONT:MongolianFontName. When the option is designated, Mongolian font in all control texts should be changed into MongolianFontName, while other languages’ font should accord with default font in the system. Because the change of Mongolian font will affect Chinese font when it is arranged with Chinese or other languages and sometimes, Chinese will be displayed in the way of lying down.</li>
+<li>Whether Mongolian space（0x202F）is stretched: CSS-MONGOLIAN-SPACE:Stretch|Normal, when the Stretch option is designated, the length of Mogolian space should be stretched as that of normal space. While the option Normal is designated, Mongolian space should not be stretched, and should be displayed in the length of the font library.</li>
+<li>Whether the Mongolian vowel space mark MVS (0x180E): is displayed: CSS-MONGOLIAN-MVS:Display|Normal, when the option Display is designated, there will be a small hollow rectangular on the screen with the size in the font library, but the rectangular will not be shown when it is printed. When the option Normal is designated, there will be no picture on the screen, but it will occupy a space of the size in the font library.</li>
+</ol>
+</section>
+
+
+
+<section class="appendix" id="standards">
+  <h2>Relative Standards of Currently Used Scripts in the Traditional Mongolian</h2>
+<p>Currently, there are some main characters in applied traditional Mongolian script, including basic Mongolian characters, symbols and Mongolian numbers.</p>
+
+</section>
+
+
 
   <section class="appendix" id="acknowledgements">
-    <h2>Acknowledgements</h2>
+  <h2>Acknowledgements</h2>
 
     <p>Special thanks to the following people who contributed to this document (contributors' names listed in in alphabetic order).</p>
 
