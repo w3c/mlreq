@@ -18,7 +18,7 @@
       noRecTrack:           true,
       shortName:            "mlreq",
       copyrightStart:       "2017",
-      edDraftURI:           "http://w3c.github.io/mlreq/",
+      edDraftURI:           "https://w3c.github.io/mlreq/",
 
       // if this is a LCWD, uncomment and set the end of its review period
       // lcEnd: "2009-08-05",
@@ -29,7 +29,7 @@
         { name: "Nasun-urt", mailto: "tbd", company: "tbd" },
         { name: "Huchitu", mailto: "tbd", company: "tbd" }
       ],
-      
+
       editors:  [
         { name: "Richard Ishida", mailto: "ishida@w3.org", company: "W3C" }
       ],
@@ -88,16 +88,16 @@
       <h3>About this document</h3>
 
       <p>This standard describes the Mongolian format standard, which can be used and achieve implementation in the CSS, SVG and XSL - F0 , and it can also be used as the reference documents for office software. It mainly focuses on the Mongolian script and its features, the basic module of Mongolian text , page layout, new CSS standard and accessories.</p>
-      
-      
+
+
       <section id="scope">
       <h4>Scope</h4>
       <p>The document describes the rules of composition of various types of text written in traditional Mongolian script and pictures, etc. in various network formats. The purpose of this standard is not to provide complete solution, but to describe the important basic information needed in the implementation in a computer.</p>
 <p>The main purpose of this document is to provide standardization and guiding rules for the display and application of traditional Mongolian script in the web. However, the more complex layout requirements such as paper layout are not included in this document. Thus, this document includes the most basic rules of display of page and characters of the traditional Mongolian script, aiming at formulating the corresponding standards of web display and application of Mongolian script for the web application vendors to follow this standard of display and application of Mongolian script in the web.</p>
-      
+
       </section>
-      
-      
+
+
       <section id="terminology">
       <h4>Terminology</h4>
       <p>The following terms and definitions apply to this standard.</p>
@@ -120,7 +120,7 @@
       <dd>Text spacing refers to the gap between the Mongolian words.</dd>
       <dt>Leftline and Rightline</dt>
       <dd>As the Mongolian writing is vertical, the right line, the left line and the line through is equivalent to the underline and overline in the horizontal English or Chinese text writing . </dd>
-      </dl>      
+      </dl>
       </section>
     </section>
 
@@ -141,8 +141,8 @@
 <p>The W3C also maintains a tracking system that  has links to github issues in W3C repositories. There are separate links for (a) requests from developers to the user community for information about how scripts/languages work, (b) issues raised against a spec, and (c) browser bugs.  For example, you can find out <a href="http://w3c.github.io/i18n-activity/textlayout/?filter=type-info-request">what information developers are currently seeking</a>, and the resulting list can also be filtered by script.</p>
 </section>
   </section>
-  
-  
+
+
 <section id="h_script_overview">
 <h2>Mongolian Script Overview</h2>
     <p>This section introduces the Mongolian script in general terms, providing some context and terminology that is useful in the remainder of the document. If possible, it's best not to introduce actual requirements in this section, but to leave those and detailed descriptions of expected typography to the sections that follow.</p>
@@ -165,18 +165,18 @@
     <h3>Glyph control</h3>
     <p class="prompt">Does the script in question require additional features to support alterations to the position or shape of glyphs, for example adjusting the distance between the base text and diacritics, or changing the glyphs used in a systematic way?  <a href="../index#glyphs_diacritics">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Atype-info-request">check for currently needed data</a>.</p>
 </section>
-    
+
 
 <section id="h_cursive">
     <h3>Cursive text</h3>
     <p class="prompt"> If this script is cursive (eg. Arabic, N'Ko, Syriac, Mongolian, etc), are there problems or needed features related to the handling of cursive text? Do cursive links break if parts of a word are marked up or styled? Do Unicode joiner and non-joiner characters behave as expected?  <a href="http://w3c.github.io/typography/index#cursive">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Atype-info-request">check for currently needed data</a>.</p>
 </section>
-    
+
 
     <section id="h_punctuation">
       <h3>Punctuation</h3>
       <p class="prompt">What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking, etc.) <a href="index#punctuation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apunctuation%20label%3Ainfo-req">check for currently needed data</a>.</p>
-      
+
       <section id="punctuation_rules">
       <h4>Punctuation rules</h4>
       <p>There are some specific requirements while using the Mongolian punctuation:</p>
@@ -246,8 +246,8 @@
     <section id="h_segmentation">
       <h3>Text boundaries &amp; selection</h3>
       <p class="prompt">What are the basic units of the text, and how are they demarcated, eg. characters, character sequences, syllables, or words?  Are spaces or different symbols used between 'words'? Is it important to treat clusters of characters as a single unit? What should happen if you double- or triple-click in the text, whether or not 'words' are separated by spaces? <a href="index#graphemes">See available information</a>.</p>
-      
-      
+
+
       <section id="selection_rules">
       <h4>Selection rules</h4>
       <p>The selected midcourt line must overlap the Mongolian &quot;baseline&quot;, as shown in <a href="#fig_selection_single_line"></a> Multi-line selection must follow the writing direction of Mongolian script, i.e., text direction from top to bottom and from left to right, as shown in <a href="#fig_selection_multiline"></a>.</p>
@@ -261,8 +261,8 @@
     <figcaption>The effect of choosing multi lines.</figcaption>
     </figure>
     </section>
-    
-    
+
+
       <section id="cursor_movement">
       <h4>Cursor movement rules</h4>
        <p>There are cursor movement keys including “←”, “→”, “↑”, “↓”, “Page Up”, “Page Down”, “Home” and “End” in the keyboard. Striking these keys needs to follow the writing direction of Mongolian script from top to bottom and from left to right. For example, the cursor moves to the left after striking the key of “←”; the cursor moves to the right when striking the key of “→”. The cursor moves down after striking the key of “↓”. When the cursor moves to the bottom of the current line, press the key of “↓” again, the cursor will move right to the top of the next line, the case of the key “↑” is opposite  , as shown in <a href="#fig_cursor_movement"></a>.</p>
@@ -271,8 +271,8 @@
     <figcaption>Illustration of cursor movement.</figcaption>
     </figure>
     </section>
-    
-    
+
+
       <section id="mouse_pointer">
       <h4>Mouse pointer rules</h4>
        <p>The mouse pointer in text editing is shown in <a href="#fig_mouse_pointer"></a>. </p>
@@ -281,19 +281,19 @@
     <p><img src="images/mouse_pointer.png" alt=" "/></p>
     <figcaption>Illustration of cursor movement.</figcaption>
     </figure>
-    
+
     <p>The cursor shape in text editing is shown in <a href="#fig_mouse_pointer"></a>,The cursor must be aligned at the base on the midpoint of the “baseline” of Mongolian script, that is, the midpoint of the “baseline” of Mongolian script is overlapping the midpoint of the cursor, with the length no longer than the middle line between the two lines of the text, as shown in the <a href="#fig_cursor_shape"></a>.</p>
     <figure id="fig_cursor_shape">
     <p><img src="images/cursor_shape.png" alt=" "/></p>
     <figcaption>Illustration of cursor movement.</figcaption>
     </figure>
     </section>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     </section>
 
     <section id="h_transforms">
@@ -345,7 +345,7 @@
 <section id="otherinline">
     <h3>Other inline features</h3>
     <p class="prompt">Does the script/language have special ways of representing inline notes (such as wakiten or kumimoji in Japanese) or other special inline features that need to be supported? <a href="http://w3c.github.io/typography/index#other_inline_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
-    
+
     <section id="width_height_spacing">
     <h4>Mongolian text width, height and spacing</h4>
     <p>Due to the different height of Mongolian text, in order to ensure that every character is in  fully displayed and the whole word looks beautiful, the height of each letter must keep in balance. The spaces between words must be different from the common gaps whose code point is <span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span>. See <a href="#fig_width_height_spacing"></a>:</p>
@@ -389,7 +389,7 @@
 
     <section id="h_justification">
       <h3>Justification &amp; line-end alignment</h3>
-      <p class="prompt"> Is it normal to have flush lines down both sides of the text body (ie. full justification)? If so, what rules are used by the script to resolve the positioning of characters on a line? Does the script conform to a grid pattern? 
+      <p class="prompt"> Is it normal to have flush lines down both sides of the text body (ie. full justification)? If so, what rules are used by the script to resolve the positioning of characters on a line? Does the script conform to a grid pattern?
         Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? <a href="index#justification">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Ainfo-req">check for currently needed data</a>.</p>
     </section>
 
@@ -405,7 +405,7 @@
     <h3>Counters, lists, etc</h3>
     <p>The display of these controls needs paying attention to the direction of the output. That is to say, the  primary display of the number 1, 2, 3. Etc. from left to right. The effect of the following codes is as it is shown in <a href="#fig_lists"></a>, please pay attention to the midcourt line aligning principles.</p>
  <figure id="fig_lists">
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: : center;">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 <p><img src="images/lists_code.png" alt=""/></p>
 <p><img src="images/lists_display.png" alt=""/></p>
 </div>
@@ -415,12 +415,12 @@
 
 
 
-  
+
   <section id="h_initial_letter">
     <h3>Initial letter styling</h3>
     <p class="prompt">Does the script/language apply special styling of the initial letter of a line or paragraph, such as for drop caps? If so, what are the rules for positioning: what is the size relationship between the large letter and the lines alongide? where does the large letter anchor relative to the lines alongside? is it normal to include initial quote marks in the large letter? is the large letter really a syllable? etc. <a href="index#initial_letter">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainitial-letter%20label%3Ainfo-req">check for currently needed data</a>.</p>
   </section>
-  
+
   <section id="h_baselines">
     <h3>Baselines</h3>
     <p class="prompt">What are the  requirements for baseline alignment between mixed scripts and in general? <a href="index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Ainfo-req">check for currently needed data</a>.</p>
@@ -429,14 +429,14 @@
     <p><img src="images/baselines.png" alt=" "/></p>
     <figcaption>The aligning baseline for Mongolian.</figcaption>
     </figure>
-    
-    
+
+
   <section id="mixed_arrangement">
   <h4>Mixed Arrangement Rules with Other Languages</h4>
   <p>When mixed with other languages, the main consideration should be midcourt line aligning. </p>
   </section>
-    
-    
+
+
   <section id="mixed_arrangement_alphanum">
   <h4>Mixed Arrangement Rules with Numbers and Latin </h4>
   <p>There is no obvious midcourt line in numbers and Latin. Therefore generally, half of the text height is regarded as a midcourt line position. When Mongolian script is mixed with numbers and Latin, the line of half of the text height should be aligned with Mongolian midcourt line. When number’s size is the same as Mongolian’s, it will be slightly larger, so some handling methods should be taken to avoid the problem, such as the methods listed in <a href="#fig_mixed_alphanum"></a>.</p>
@@ -445,8 +445,8 @@
     <figcaption>The mixed arrangement of Mongolian, Latin and numbers.</figcaption>
     </figure>
 </section>
-    
-    
+
+
   <section id="mixed_arrangement_cjk">
   <h4>Mixed Arrangement Rules with Chinese and Japanese</h4>
   <p>The notices of the mixed arrangement with Chinese or Japanese are as the following:</p>
@@ -462,12 +462,12 @@
     </figure>
 </section>
   </section>
-  
+
   <section id="h_other_paragraph">
     <h3>Other paragraph features</h3>
     <p class="prompt">In this script/language, is the first line of text typically indented at the start of a paragraph? Are there other features of paragraph design that are peculiar to your script? <a href="index#other_para_features">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Ainfo-req">check for currently needed data</a>.</p>
   </section>
-      
+
 </section>
 
   <section id="h_pages">
@@ -618,7 +618,7 @@
     <h4>Label</h4>
     <p>Textarea is an important control, and is required in the text input, edit, and display. Scroll bar rolling accords with requirements of select control in TBD. The display and moving direction of the cursor should be consistent with the standard of cursor movement in TBD. In some browsers, there are functions of stretching the size of textarea. The stretching icon should be in the lower right corner, and the  textarea scaling accords with the mouse dragging. The rows and cols attribute of Textarea is the opposite of those in horizontal. Its specific attributes are as the following: rows {int} : showing the column number and cols {int} : showing the row number </p>
 <figure id="fig_label">
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: : center;">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 <p><img src="images/label_code.png" alt=""/></p>
 <p><img src="images/label_display.png" alt=""/></p>
 </div>
@@ -631,7 +631,7 @@
     <h4>Fieldset</h4>
     <p>As shown in <a href="#fig_fieldset"></a>, it is a fieldset, the example fieldset generation with the following codes, the latter figure shows the midcourt line aligning principles.</p>
 <figure id="fig_fieldset">
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: : center;">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 <p><img src="images/fieldset_code.png" alt=""/></p>
 <p><img src="images/fieldset_display.png" alt=""/></p>
 </div>
@@ -644,7 +644,7 @@
     <section id="h_pagination">
     <h3>More page layout &amp; pagination</h3>
     <p class="prompt">Some cultures define page areas and page progression direction very differently from those in the West (eg. kihon hanmen in Japanese). Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR? <a href="index#more_page_layout_and_pagination">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apagination%20label%3Ainfo-req">check for currently needed data</a>.</p>
- 
+
     <section id="mixed_media">
     <h4>Mixed arrangement of text and illustrations  (or other non-text objects)</h4>
     <p>The illustrations here include ordinary picture formats, textboxes, charts, media objects and so on, all of which are called illustration as followed. There are many ways (as shown in  <a href="#fig_mixed_media"></a>) of mixed arrangement of text and illustrations but, no matter which way, some principles need to be obeyed.</p>
