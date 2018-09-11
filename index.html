@@ -206,13 +206,13 @@
 
 <section id="mongolian_space">
 <h4>Display rules for Mongolian space</h4>
-<p>Mongolian case supplementary component display rules and Mongolian space   (0x202f) processing.</p>
-<p>The inputting of Mongolian case supplementary component into the computer requires the Mongolian space 0x202F first, and then the corresponding Mongolian script. For example, the internal code of the word “<span lang="mn"> ᠤᠨ</span>” is: 0x202F  0x1824 0x1828, among which 0x202F is called Mongolian space, inputted before the Mongolian case supplementary component .</p>
+<p>Mongolian case supplementary component display rules and Mongolian space (0x202f) processing.</p>
+<p>The inputting of Mongolian case supplementary component into the computer requires the Mongolian space 0x202F first, and then the corresponding Mongolian script. For example, the internal code of the word “<span lang="mn"> ᠤᠨ</span>” is: 0x202F 0x1824 0x1828, among which 0x202F is called Mongolian space, inputted before the Mongolian case supplementary component .</p>
 <figure id="fig_punctuation_text_alignment2">
 <p><img src="images/mongolian_space.png"/></p>
 <figcaption>The difference between the common space and Mongolian space.</figcaption>
 </figure>
-<p>Mongolian space（0x202F）and case supplementary component cannot appear at the beginning of a line, for example, <a href="#fig_correct_mongolian_space"></a> is the correct processing method and <a href="#fig_incorrect_mongolian_space"></a> is the wrong processing method.</p>
+<p>Mongolian space (0x202F) and case supplementary component cannot appear at the beginning of a line, for example, <a href="#fig_correct_mongolian_space"></a> is the correct processing method and <a href="#fig_incorrect_mongolian_space"></a> is the wrong processing method.</p>
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: flex-end;">
 <figure id="fig_correct_mongolian_space">
 <p><img src="images/correct_mongolian_space.png"/></p>
@@ -699,7 +699,7 @@
 <li>In mixed arrangement with other languages, Mongolian text is X larger than the other texts. Designating the option requires that the size of Mongolian in all control texts should be automatically X larger than the size of the text of other scripts or X smaller under the condition of using minus.</li>
 <li>When arranged with other languages, Mongolian should follow the midcourt line aligning principles as the following. when the option CSS-MONGOLIAN-MOVE- WAIST:X px is designated, Mongolian text in all control texts should move X px to left or right so that it can be aligned with the midcourt line of other texts. Because the midcourt line cannot be aligned well under the condition, the option needs to be set.</li>
 <li>When arranged with other languages, Mongolian font should be set as  CSS-MONGOLIAN-FONT:MongolianFontName. When the option is designated, Mongolian font in all control texts should be changed into MongolianFontName, while other languages’ font should accord with default font in the system. Because the change of Mongolian font will affect Chinese font when it is arranged with Chinese or other languages and sometimes, Chinese will be displayed in the way of lying down.</li>
-<li>Whether Mongolian space（0x202F）is stretched: CSS-MONGOLIAN-SPACE:Stretch|Normal, when the Stretch option is designated, the length of Mogolian space should be stretched as that of normal space. While the option Normal is designated, Mongolian space should not be stretched, and should be displayed in the length of the font library.</li>
+<li>Whether Mongolian space (0x202F) is stretched: CSS-MONGOLIAN-SPACE:Stretch|Normal, when the Stretch option is designated, the length of Mogolian space should be stretched as that of normal space. While the option Normal is designated, Mongolian space should not be stretched, and should be displayed in the length of the font library.</li>
 <li>Whether the Mongolian vowel space mark MVS (0x180E): is displayed: CSS-MONGOLIAN-MVS:Display|Normal, when the option Display is designated, there will be a small hollow rectangular on the screen with the size in the font library, but the rectangular will not be shown when it is printed. When the option Normal is designated, there will be no picture on the screen, but it will occupy a space of the size in the font library.</li>
 </ol>
 </section>
