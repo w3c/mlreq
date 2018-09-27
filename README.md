@@ -1,10 +1,10 @@
 # Mongolian Layout Task Force (mlreq)
 
-This group is planned, but not yet active. It will explore gaps and requirements for support of languages using the traditional Mongolian script on the Web and in Digital Publications. Over a couple of years there have been lengthy discussions about the Mongolian encoding model on the list used by this group. Those discussions are now being driven by the Unicode Consortium.
+This group explores gaps and requirements for support of languages using the traditional Mongolian script on the Web and in Digital Publications. Over a couple of years there have been lengthy discussions about the Mongolian encoding model on the list used by this group. Those discussions are now being driven by the Unicode Consortium.
 
 A significant problem faced by the Web is that experts don't know how to tell the W3C what problems exist for support of their script or language, and the W3C doesn't know how to contact people who can help when questions arise. This network of experts should help to significantly reduce that problem.
 
-Some experts will go a step further, and contribute to a gap-analysis or requirements document, or to other documents produced by the group.
+Some experts go a step further, and contribute to a gap-analysis or requirements document, or to other documents produced by the group.
 
 Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work supports the development of the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which indicates hot-spots for language support. The focus is especially on typographic features for which information in English is hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
 
