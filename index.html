@@ -107,7 +107,7 @@
       <dt>Mongolian Space</dt>
       <dd>Two spaces are used in Mongolian, <span class="codepoint" translate="no"><span class="uname">U+0020 SPACE</span></span> and the  Mongolian space <span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span>.</dd>
       <dt>Mongolian Symbols</dt>
-      <dd>This refers to various symbols used in Mongolian text. In formulating the Mongolian coding standard, some of the codes is used in the coding area of the Mongolian standard, while the rest are symbols used in the scripts of other ethnic groups, due to the fact that some symbols are borrowed from other ethnic groups . </dd>
+      <dd>This refers to various symbols used in Mongolian text. In formulating the Mongolian coding standard, some of the codes is used in the coding area of the Mongolian standard, while the rest are symbols used in the scripts of other ethnic groups, due to the fact that some symbols are borrowed from other ethnic groups. </dd>
       <dt>Baseline</dt>
       <dd>Baseline in Mongolian is called “Nirogo”. Mongolian writing is generally aligned to the baseline. </dd>
       <dt>Writing Direction</dt>
@@ -119,7 +119,7 @@
       <dt>Text Spacing</dt>
       <dd>Text spacing refers to the gap between the Mongolian words.</dd>
       <dt>Leftline and Rightline</dt>
-      <dd>As the Mongolian writing is vertical, the right line, the left line and the line through is equivalent to the underline and overline in the horizontal English or Chinese text writing . </dd>
+      <dd>As the Mongolian writing is vertical, the right line, the left line and the line through is equivalent to the underline and overline in the horizontal English or Chinese text writing. </dd>
       </dl>
       </section>
     </section>
@@ -266,7 +266,7 @@
 
       <section id="cursor_movement">
       <h4>Cursor movement rules</h4>
-       <p>Striking cursor movement keys on the keyboard, including “←”, “→”, “↑”, “↓”, “Page Up”, “Page Down”, “Home” and “End”,  should produce movement that follows the writing direction of the Mongolian script from top to bottom and from left to right. For example, the cursor moves to the left after striking the “←” key; the cursor moves to the right when striking the “→” key. The cursor moves down after striking the “↓” key. When the cursor reaches the bottom of the current line, and the key “↓” is pressed again, the cursor will move right and to the top of the next line, as shown in <a href="#fig_cursor_movement"></a>. In the case of the  “↑” key, the opposite  occurs.</p>
+       <p>Striking cursor movement keys on the keyboard, including “←”, “→”, “↑”, “↓”, “Page Up”, “Page Down”, “Home” and “End”, should produce movement that follows the writing direction of the Mongolian script from top to bottom and from left to right. For example, the cursor moves to the left after striking the “←” key; the cursor moves to the right when striking the “→” key. The cursor moves down after striking the “↓” key. When the cursor reaches the bottom of the current line, and the key “↓” is pressed again, the cursor will move right and to the top of the next line, as shown in <a href="#fig_cursor_movement"></a>. In the case of the  “↑” key, the opposite  occurs.</p>
     <figure id="fig_cursor_movement">
     <p><img src="images/cursor_movement.png" alt=" "/></p>
     <figcaption>Illustration of cursor movement.</figcaption>
@@ -405,7 +405,7 @@
 
     <section id="h_counters">
     <h3>Counters, lists, etc</h3>
-    <p>The display of these controls needs to pay attention to the direction of the output. That is to say, the  primary display of the number 1, 2, 3, etc. is from left to right. The effect of the following code is as  shown in <a href="#fig_lists"></a>. <del>Please pay attention to the midcourt line aligning principles.</del> Note how the text is  centered on the vertical midline. <span class="ednote">The separator dots for the numbering are not centre-aligned. We should probably mention that. Also, shouldn't the numbers be rotated counter-clockwise?</span></p>
+    <p>The display of these controls needs to pay attention to the direction of the output. That is to say, the  primary display of the number 1, 2, 3, etc. is from left to right. The effect of the following code is as  shown in <a href="#fig_lists"></a>. <del>Please pay attention to the midcourt line aligning principles.</del> Note how the text is centered on the vertical midline. <span class="ednote">The separator dots for the numbering are not centre-aligned. We should probably mention that. Also, shouldn't the numbers be rotated counter-clockwise?</span></p>
  <figure id="fig_lists">
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 <p><img src="images/lists_code.png" alt=""/></p>
@@ -425,8 +425,8 @@
 
   <section id="h_baselines">
     <h3>Baselines</h3>
-    <p class="prompt">What are the  requirements for baseline alignment between mixed scripts and in general? <a href="index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    <p>Mongolian is aligned to a baseline that runs down the center of the writing, and all  text is aligned to this baseline   as shown in <a href="#fig_baselines"></a>:</p>
+    <p class="prompt">What are the requirements for baseline alignment between mixed scripts and in general? <a href="index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Ainfo-req">check for currently needed data</a>.</p>
+    <p>Mongolian is aligned to a baseline that runs down the center of the writing, and all text is aligned to this baseline  as shown in <a href="#fig_baselines"></a>:</p>
     <figure id="fig_baselines">
     <p><img src="images/baselines.png" alt=" "/></p>
     <figcaption>The aligning baseline for Mongolian.</figcaption>
@@ -454,8 +454,8 @@
   <p>For mixed arrangements with Chinese or Japanese, note the following:</p>
 <ol>
 <li>Chinese and Japanese cannot be displayed in on their side. They must be <del>the same as the display direction of </del>displayed upright, as in horizontal Chinese or Japanese.</li>
-<li>The center line of Chinese or Japanese text  (the width in this case) needs to be aligned with the centre baseline of the Mongolian text.</li>
-<li>Pay attention to the top alignment and bottom alignment of the Mongolian text. In the same line, the mixed display of Mongolian and Chinese needs  attention to produce a balanced alignment. When displayed, it should stretch space, but empty distance or space should not be added in Chinese text. <span class="ednote">Does this mean that no inter-character spacing should be applied to the Chinese?</span></li>
+<li>The center line of Chinese or Japanese text (the width in this case) needs to be aligned with the centre baseline of the Mongolian text.</li>
+<li>Pay attention to the top alignment and bottom alignment of the Mongolian text. In the same line, the mixed display of Mongolian and Chinese needs attention to produce a balanced alignment. When displayed, it should stretch space, but empty distance or space should not be added in Chinese text. <span class="ednote">Does this mean that no inter-character spacing should be applied to the Chinese?</span></li>
 <li> Mongolian is smaller than Chinese or Japanese in the same font size, so some handling methods should be taken to avoid the problem, such as methods listed in <a href="#fig_mixed_cjk"></a>.</li>
 </ol>
 <figure id="fig_mixed_cjk">
@@ -546,7 +546,7 @@
 
 <section id="h_vertical_text">
     <h3>Vertical text</h3>
-    <p class="prompt">What are  the requirements for vertically oriented text?  What about if you mix vertical text with scripts that are normally only horizontal? Is it normal to use different characters in vertical vs. horizontal text? Do you expect short numbers, acronyms, etc to run horizontally within a vertical line (tate chu yoko)? <a href="index#vertical_text">See available information</a>.</p>
+    <p class="prompt">What are the requirements for vertically oriented text?  What about if you mix vertical text with scripts that are normally only horizontal? Is it normal to use different characters in vertical vs. horizontal text? Do you expect short numbers, acronyms, etc to run horizontally within a vertical line (tate chu yoko)? <a href="index#vertical_text">See available information</a>.</p>
     <p>The Mongolian writing direction is shown in <a href="#fig_writing_direction"></a>.</p>
     <figure id="fig_writing_direction">
     <p><img src="images/writing_direction.png" alt=" "/></p>
@@ -558,7 +558,7 @@
 
     <section id="h_tables">
     <h3>Tables</h3>
-    <p>When setting <code class="kw" translate="no">writing-mode:tb-lr</code> using CSS (grammar will have a little difference according to various browsers), the table will support vertical display feature of Mongolian script. When setting default options for the text in a table, it will display  horizontally centered, that is, the upper and the lower center lines of the table cell will align at the center line of the baseline of the Mongolian text, as shown in <a href="#fig_table"></a>.</p>
+    <p>When setting <code class="kw" translate="no">writing-mode:tb-lr</code> using CSS (grammar will have a little difference according to various browsers), the table will support vertical display feature of Mongolian script. When setting default options for the text in a table, it will display horizontally centered, that is, the upper and the lower center lines of the table cell will align at the center line of the baseline of the Mongolian text, as shown in <a href="#fig_table"></a>.</p>
     <figure id="fig_table">
     <p><img src="images/table.png" alt=" "/></p>
     <figcaption>The aligning baseline for Mongolian.</figcaption>
