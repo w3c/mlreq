@@ -9,13 +9,13 @@ Some experts go a step further, and contribute to a gap-analysis or requirements
 Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work supports the development of the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which indicates hot-spots for language support. The focus is especially on typographic features for which information in English is hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
 
 ### Documents
-- [Mongolian Gap Analysis](https://w3c.github.io/mlreq/gap-analysis/) (template only)
-- [Mongolian Layout Requirements](https://w3c.github.io/mlreq/) (very early draft only)
+- [Mongolian Gap Analysis](https://w3c.github.io/mlreq/gap-analysis/) (template only, so far)
+- [Mongolian Layout Requirements](https://w3c.github.io/mlreq/) (how Mongolian needs to work on the Web & in eBooks)
 - [Mongolian variant forms](https://r12a.github.io/mongolian-variants/) (tracks work on variant encoding discussions)
 - [Encoding discussion document log](https://w3c.github.io/mlreq/variants/document-log.html)
 
 ### Following
-Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-mongolian](https://lists.w3.org/Archives/Public/public-i18n-mongolian/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the traditional Mongolian writing systems. (Please use github issues rather than the mailing list to send feedback. The main purpose of the public-i18n-mongolian mailing list is for notifications; meeting minutes are also sent to public-i18n-mongolian. Over a couple of years there have been lengthy discussions about the Mongolian encoding model on the public-i18n-mongolian list; those discussions are now continuing on a list owned by the Unicode Consortium.)
+Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-mongolian](https://lists.w3.org/Archives/Public/public-i18n-mongolian/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the traditional Mongolian writing systems. (Please use github issues rather than the mailing list to send feedback. The main purpose of the public-i18n-mongolian mailing list is for notifications; meeting minutes are also sent to public-i18n-mongolian.)
 
 You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=mongolian) page. (That link applies an `mongolian` filter.)
 
