@@ -25,13 +25,12 @@ All contributors must read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Please use the [GitHub issue list](https://github.com/w3c/mlreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
 
-You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.
+**You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
 
 Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in any meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
 ### Contacts
-Chairs: Nasun-urt, Huqitu
-W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+Chairs: Nasun-urt, Huqitu • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 
 ### Links
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=mlreq)
