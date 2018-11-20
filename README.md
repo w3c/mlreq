@@ -29,15 +29,18 @@ You may raise issues in Chinese, however any substantive discussions should be s
 
 Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in any meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
+### Contacts
+Chairs: Nasun-urt, Huqitu
+W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+
 ### Links
-- [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=mongolian)
+- [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=mlreq)
 - [Github issues](https://github.com/w3c/mlreq/issues)
 - [Charter](http://w3c.github.io/mlreq/charter/) (proposed)
 - Action tracker (tbd)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
 - Meeting info (tbd)
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-mongolian/)
-- Contacts: [Richard Ishida](mailto:ishida@w3.org)
 
 ### Links to background information
 The following information describes work going on at the W3C to support languages on the Web.
