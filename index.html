@@ -324,7 +324,12 @@
     <p><img src="images/text_decoration_mixed.png" alt=" "/></p>
     <figcaption>Underline,  overline and  strikethrough as mixed with other languages.</figcaption>
     </figure>
-    </section>
+    <p>Lines alongside the text may break on the spaces between words. When doing so, the gaps introduced before suffixes by <span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span> and <span class="codepoint" translate="no"><span class="uname">U+180E MONGOLIAN VOWEL SEPARATOR</span></span> should not be skipped. Even though there is a gap, suffixes are considered part of the word. See an example in the second word of <a href="#fig_text_decoration_gaps"></a>:</p>
+    <figure id="fig_text_decoration_gaps">
+    <p><img src="images/fig_text_decoration_gaps.png" alt=" "/></p>
+    <figcaption>When inter-word spaces are skipped, gaps produced by NNBSP or MVS are not.</figcaption>
+    </figure>
+</section>
 
     <section id="h_emphasis">
       <h3>Emphasis &amp; highlighting</h3>
