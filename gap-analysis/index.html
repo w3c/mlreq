@@ -33,7 +33,7 @@
 
       wg:           "Internationalization Working Group",
       wgURI:        "http://www.w3.org/International/core/",
-      wgPublicList: "public-i18n-arabic",
+      wgPublicList: "public-i18n-mongolian",
       bugTracker: { new: "https://github.com/w3c/mlreq/issues", open: "https://github.com/w3c/mlreq/issues" } ,
       otherLinks: [
         {
@@ -92,7 +92,7 @@
 
     <p>Gap analysis work usually starts with a <strong>preliminary analysis</strong>, conducted quickly by one or a small group of experts. Then a more <strong>detailed analysis</strong> is carried out, involving a wider range of experts. The detailed analysis may involve the development of tests, in order to illustrate issues and track results for browsers. The next phase is <strong>ongoing maintenance</strong>. It is expected that the resulting document will not be frozen: as gaps are fixed, this should be noted in the document. It is also possible that new gaps are noticed or arise, and they can be added to this document when that happens.</p>
     
-    <p>As the gap analysis develops, the requirements for features that are problematic should be described in the companion document, <a href="https://w3c.github.io/mlreq/">Text Layout Requirements for the Arabic Script</a>. Links to the appropriate part of that document should be added to this document as the material is created. Note that the requirements document should not contain any technology-specific information: all of that belongs here.</p>
+    <p>As the gap analysis develops, the requirements for features that are problematic should be described in the companion document, <a href="https://w3c.github.io/mlreq/">Mongolian Layout Requirements</a>. Links to the appropriate part of that document should be added to this document as the material is created. Note that the requirements document should not contain any technology-specific information: all of that belongs here.</p>
     </section>
     
     <section id="prioritization">
@@ -233,12 +233,20 @@
 
 
 
-<section id="textdecoration" class="tbd">
+<section id="textdecoration" class="advanced">
     <h3>Text decoration</h3>
     <p class="status_prompt">Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. Do underlines need to be broken in special ways for this script? Do you need support for additional line shapes or widths? Does the distance or position of the lines relative to the text need to vary in ways that are not achievable? Are lines correctly drawn relative to vertical text? <a href="http://w3c.github.io/typography/index#text_decoration">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
-    <p></p>
+<section id="nnbsp_gaps">
+   <h4><code class="kw" translate="no">text-decoration-skip:spaces</code> in CSS breaks on NNBSP</h4>
+
+    <p>The value <code class="kw" translate="no">space</code>, when applied to the CSS property <code class="kw" translate="no">text-decoration-skip</code>, breaks the line under white space. According to the <a href="https://w3c.github.io/mlreq/#h_text_decoration">Mongolian Layout Requirements</a>, there should be no break under a gap produced by the suffix separator NNBSP.</p>
+<p>The <a href="https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-property">current text of the CSS spec</a> says: &quot;Skip all spacing, i.e. all typographic character units with the Unicode White_Space property [UAX44], plus any adjacent letter-spacing or word-spacing.&quot; This definition includes NNBSP, which is a problem for Mongolian.</p>
+<p>An <a href="https://github.com/w3c/csswg-drafts/issues/3393">issue</a> has been raised in the CSS repository.</p>
+<p>There is a <a href="https://w3c.github.io/i18n-tests/run?base=css-text-decor/line-decoration&batch=line-decoration&test=text-decoration-skip-068.html">test</a> available, but no production browsers currently support <code class="kw" translate="no">text-decoration-skip</code>, so there are no useful results<a href="https://w3c.github.io/i18n-tests/results/text-selection#devanagari"></a>.</p>
+<p>I'm marking this as advanced, but if there is consensus to mark as a basic issue we can change it.</p>
+    </section>
     </section>
 
 
