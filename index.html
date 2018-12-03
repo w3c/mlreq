@@ -207,13 +207,12 @@
 
 <section id="mongolian_space">
 <h4>Display rules for Mongolian space</h4>
-<p><del>The inputting of Mongolian case supplementary component into the computer requires the Mongolian space 0x202F first, and then the corresponding Mongolian script. For example, the internal code of the word “<span lang="mn"> ᠤᠨ</span>” is: 0x202F  0x1824 0x1828, among which 0x202F is called Mongolian space, inputted before the Mongolian case supplementary component .</del></p>
 <p>Mongolian word suffixes are separated from the preceding word using <span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span>, rather than <span class="codepoint" translate="no"><span class="uname">U+0020 SPACE</span></span>. For example, the code points that make up the suffix  “<span lang="mn"> ᠤᠨ</span>” are: 0x202F  0x1824 0x1828.</p>
 <figure id="fig_punctuation_text_alignment2">
 <p><img src="images/mongolian_space.png"/></p>
 <figcaption>The difference between the common space and Mongolian space.</figcaption>
 </figure>
-<p><del>Mongolian space（0x202F）and case supplementary component</del> <span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span> and a following suffix cannot appear at the beginning of a line. For example, <a href="#fig_correct_mongolian_space"></a> shows the correct approach and <a href="#fig_incorrect_mongolian_space"></a> shows an incorrect approach.</p>
+<p><span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span> and a following suffix cannot appear at the beginning of a line. For example, <a href="#fig_correct_mongolian_space"></a> shows the correct approach and <a href="#fig_incorrect_mongolian_space"></a> shows an incorrect approach.</p>
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: flex-end;">
 <figure id="fig_correct_mongolian_space">
 <p><img src="images/correct_mongolian_space.png"/></p>
@@ -370,7 +369,7 @@
     <section id="h_line_breaking">
       <h3>Line breaking</h3>
       <p class="prompt">What are the important features about how  script wraps when it hits the end of a line?   Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan and Javanese)? What characters should not appear at the end or start of a line, and what should be done to prevent that? <a href="index#line_breaking">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Ainfo-req">check for currently needed data</a>.</p>
-      <p><del>Newline does not allow a word break and a sign of a new line of all words are   space, punctuation or another language.</del> Line-breaking should not split words. <a href="#fig_newline_correct"></a> shows  correct line-breaking, without breaking the Mongolian words. <a href="#fig_newline_incorrect"></a> shows incorrect line-breaking for “<img src="images/text001.png" alt=""/>” and “<img src="images/text002.png" alt=""/>”.</p>
+      <p>Line-breaking should not split words. <a href="#fig_newline_correct"></a> shows  correct line-breaking, without breaking the Mongolian words. <a href="#fig_newline_incorrect"></a> shows incorrect line-breaking for “<img src="images/text001.png" alt=""/>” and “<img src="images/text002.png" alt=""/>”.</p>
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 <figure id="fig_newline_correct">
 <p><img src="images/newline_correct.png"/></p>
@@ -405,7 +404,7 @@
 
     <section id="h_counters">
     <h3>Counters, lists, etc</h3>
-    <p>The display of these controls needs to pay attention to the direction of the output. That is to say, the  primary display of the number 1, 2, 3, etc. is from left to right. The effect of the following code is as  shown in <a href="#fig_lists"></a>. <del>Please pay attention to the midcourt line aligning principles.</del> Note how the text is centered on the vertical midline. <span class="ednote">The separator dots for the numbering are not centre-aligned. We should probably mention that. Also, shouldn't the numbers be rotated counter-clockwise?</span></p>
+    <p>The display of these controls needs to pay attention to the direction of the output. That is to say, the  primary display of the number 1, 2, 3, etc. is from left to right. The effect of the following code is as  shown in <a href="#fig_lists"></a>.  Note how the text is centered on the vertical midline. <span class="ednote">The separator dots for the numbering are not centre-aligned. We should probably mention that. Also, shouldn't the numbers be rotated counter-clockwise?</span></p>
  <figure id="fig_lists">
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 <p><img src="images/lists_code.png" alt=""/></p>
@@ -435,13 +434,13 @@
 
   <section id="mixed_arrangement">
   <h4>Mixed Arrangement Rules with Other Languages</h4>
-  <p>When mixed with other languages, <del>the main consideration should be midcourt line aligning</del> the text in those languages should also be centre-aligned along the Mongolian baseline. </p>
+  <p>When mixed with other languages,  the text in those languages should also be centre-aligned along the Mongolian baseline. </p>
   </section>
 
 
   <section id="mixed_arrangement_alphanum">
   <h4>Mixed Arrangement Rules with Numbers and Latin </h4>
-  <p>There is no obvious midcourt line in numbers and Latin. Therefore generally, half of the text height is regarded as a midcourt line position. When Mongolian script is mixed with numbers and Latin, the line of half of the text height should be aligned with Mongolian midcourt line. When <del>number’s size</del> font size of numbers <span class="ednote">?</span> is the same as Mongolian’s, it will be slightly larger, so some handling methods should be taken to avoid the problem, such as the methods listed in <a href="#fig_mixed_alphanum"></a>.</p>
+  <p>There is no obvious midcourt line in numbers and Latin. Therefore generally, half of the text height is regarded as a midcourt line position. When Mongolian script is mixed with numbers and Latin, the line of half of the text height should be aligned with Mongolian midcourt line. When  font size of numbers is the same as Mongolian’s, it will be slightly larger, so some handling methods should be taken to avoid the problem, such as the methods listed in <a href="#fig_mixed_alphanum"></a>.</p>
       <figure id="fig_mixed_alphanum">
     <p><img src="images/mixed_alphanum.png" alt=" "/></p>
     <figcaption>The mixed arrangement of Mongolian, Latin and numbers.</figcaption>
@@ -453,7 +452,7 @@
   <h4>Mixed Arrangement Rules with Chinese and Japanese</h4>
   <p>For mixed arrangements with Chinese or Japanese, note the following:</p>
 <ol>
-<li>Chinese and Japanese cannot be displayed in on their side. They must be <del>the same as the display direction of </del>displayed upright, as in horizontal Chinese or Japanese.</li>
+<li>Chinese and Japanese cannot be displayed in on their side. They must be displayed upright, as in horizontal Chinese or Japanese.</li>
 <li>The center line of Chinese or Japanese text (the width in this case) needs to be aligned with the centre baseline of the Mongolian text.</li>
 <li>Pay attention to the top alignment and bottom alignment of the Mongolian text. In the same line, the mixed display of Mongolian and Chinese needs attention to produce a balanced alignment. When displayed, it should stretch space, but empty distance or space should not be added in Chinese text. <span class="ednote">Does this mean that no inter-character spacing should be applied to the Chinese?</span></li>
 <li> Mongolian is smaller than Chinese or Japanese in the same font size, so some handling methods should be taken to avoid the problem, such as methods listed in <a href="#fig_mixed_cjk"></a>.</li>
@@ -495,10 +494,10 @@
 
     <section id="h_paper_direction">
     <h4>Paper direction</h4>
-    <p>Generally, <del>&quot;horizontal&quot;</del> landscape is the default Mongolian format, as shown in <a href="#fig_paper_direction"></a>.</p>
+    <p>Generally,  landscape is the default Mongolian format, as shown in <a href="#fig_paper_direction"></a>.</p>
      <figure id="fig_paper_direction">
     <p><img src="images/paper_direction.png" alt=" "/></p>
-    <figcaption><del>Effect of &quot;Horizontal&quot;</del> Example of landscape paper direction.</figcaption>
+    <figcaption> Example of landscape paper direction.</figcaption>
     </figure>
     </section>
 
