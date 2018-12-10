@@ -30,7 +30,7 @@ Please use the [GitHub issue list](https://github.com/w3c/mlreq/issues) to repor
 Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in any meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
 ### Contacts
-Chairs: Nasun-urt, Huqitu • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
+Chairs: Nasun-urt, 胡其图 (Hu Qitu) • W3C staff: [Richard Ishida](mailto:ishida@w3.org)
 
 ### Links
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=mlreq)
