@@ -56,11 +56,11 @@
 
 <body>
   <div id="abstract">
-    <p>This document describes and prioritises gaps for the support of Mongolian on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. <strong>This is a preliminary analysis.</strong></p>
+    <p>This document describes and prioritises gaps for the support of the Traditional Mongolian script (Hudum) on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. <strong>This is a preliminary analysis.</strong></p>
   </div>
 
   <div id="sotd">
-    <p>This document describes and prioritises gaps for the support of Mongolian on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. This document complements the document <a href="https://w3c.github.io/mlreq/">Mongolian Layout Requirements</a>, which describes the requirements for areas where gaps appear. It is linked to from the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a> that tracks Web support for many languages.</p>
+    <p>This document describes and prioritises gaps for the support of Mongolian on the Web and in eBooks. In particular, it is concerned with text layout for the traditional (Hudum) script. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. This document complements the document <a href="https://w3c.github.io/mlreq/">Mongolian Layout Requirements</a>, which describes the requirements for areas where gaps appear. It is linked to from the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a> that tracks Web support for many languages.</p>
 <p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/mlreq/">Mongolian Layout Task Force</a>, part of the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
 
       <p data-lang="en">To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on&nbsp; using a URL.</p>
@@ -143,20 +143,29 @@
     
     
     
-<section id="encoding" class="tbd">
+<section id="encoding" class="basic">
     <h3>Characters &amp; encoding</h3>
     <p class="status_prompt">Are there any character repertoire issues preventing use of this script on the Web? Do variation selectors need attention? Are there any other encoding-related issues?</p>
 
-    <p></p>
+    <section id="encoding_problems">
+	<h4>Encoding model needs to be simplified</h4>
+	<p>The Unicode encoding model for Mongolian is notoriously problematic. Differentiation of code points by phonetics rather than by glyph shape leads to many spelling mistakes by authors, as the glyphs for many code points or positional forms are identical.</p>
+<p>However, more immediate problems arise due to the lack of standardisation and the current complexity surrounding the writing of alternate glyph forms, context-dependent and orthographic. This makes it impossible to create interoperable content that can be guarranteed to look the same or even accurate given the use of different fonts and text processors.</p>
+<p>Experts from Mongolia and China are currently working with the Unicode Consortium in order to simplify and standardise the Mongolian encoding model.</p>
+	</section>
     </section>
 
 
 
-<section id="fonts" class="tbd">
+<section id="fonts" class="basic">
     <h3>Fonts</h3>
     <p class="status_prompt">Do the standard fallback fonts used in browsers (eg. serif, sans-serif, cursive, etc.) match expectations? Are special font or OpenType features needed for this script that are not available?  <a href="https://w3c.github.io/typography/index#font-style">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Afont-style%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
-    <p></p>
+    <section id="font_problems">
+	<h4>Lack of standardisation of variants</h4>
+<p>The lack of standardisation surrounding the outcome of using free variation selectors across fonts makes content authoring unreliable. In addition, the many rules needed to control automatic selection of appropriate glyph variants, particularly for the QA and GA letters, present a barrier to would-be font designers.</p>
+<p>Experts from Mongolia and China are currently working with the Unicode Consortium in order to simplify and standardise the Mongolian encoding model in ways that will address this issue.</p>
+	</section>
 </section>
 
 
@@ -171,13 +180,13 @@
 
 
 
-<section id="glyphs" class="tbd">
+<section id="glyphs" class="basic">
     <h3>Glyph shaping and positioning</h3>
     <p class="status_prompt">Does the script in question require additional user control features to support alterations to the position or shape of glyphs, for example adjusting the distance between the base text and diacritics, or changing the glyphs used in a systematic way? Do you need to be able to compose/decompose conjuncts, or show characters that are otherwise hidden, etc? <a href="../index#glyphs_diacritics">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
 
-    <p></p>
+    <p>See the comments above under <a href="#fonts">.</a></p>
     </section>
 
 
@@ -311,13 +320,19 @@
 
 
 
-<section id="counters" class="tbd">
+<section id="counters" class="advanced">
     <h3>Counters, lists, etc.</h3>
     <p class="status_prompt">The CSS Counter Styles specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc.The rules plus more counter styles (totalling around 120 for over 30 scripts) are listed in the document <a href="https://w3c.github.io/predefined-counter-styles/">Ready-made Counter Styles</a>. Do these cover your needs?  Are the details correct? Are there other aspects related to counters and lists that need to be addressed? <a href="https://w3c.github.io/typography/index#counters">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acounter-styles%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
-    <p></p>
-</section>
+<section id="lists">
+<h4>Upright list counters</h4>
+<p>A common way to orient counters for lists in vertical text is to have an upright number with a dot alongside it.<a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/tcu-all-pref.html" target="text"></a></p>
+<p><img src="images/vertical-lists.png" alt=""></p>
+<p>The expected way to achieve this in HTML would be to use the following CSS: <code>li::marker { text-combine-upright: all; }</code>, however this cannot be used because browsers don't support <code class="kw" translate="no">text-combine-upright</code>. . Tests: <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/japanese_list_upright.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/japanese_list_upright_pref.html" target="text">proprietary syntax</a></p>
+<p>A workaround might be to use fullwidth characters for counters, such as ①, ②, ③ etc., but use of such a workaround requires the availability of custom built counter styles, and only Firefox currently supports the CSS Counter Styles specification. So that doesn't work either. Tests: <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/korean-list-counterstyles.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/korean-list-counterstyles-pref.html" target="text">proprietary syntax</a></p>
+<p>It is a significant nuisance for content authoring to not be able to produce upright counters for lists.</p>
+</section></section>
 
 
 
@@ -390,12 +405,16 @@
 
 
 
-<section id="interaction" class="tbd">
+<section id="interaction" class="basic">
     <h3>Forms &amp; user interaction</h3>
     <p class="status_prompt">Are vertical form controls well supported? In right-to-left scripts, is it possible to set the base direction for a form field? Is the scroll bar on the correct side? etc. <a href="https://w3c.github.io/typography/index#page_numbering_running_headers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Apage-numbering%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
-    <p></p>
+<section id="vertical-form-controls">
+<h4>Vertical form controls</h4>
+<p>Handling of vertical text in forms is lacking a good deal of support. Only the <span class="pass">Firefox</span> desktop browser does a good job of this. <a href="https://www.w3.org/International/tests/repo/results/writing-mode-vertical#rl_forms">See test results</a>. <span class="fail">Other browsers</span> fail resoundingly in terms of orienting form controls vertically and displaying text vertically inside them. More Tests: <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/vertical-form.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/vertical-form-pref.html" target="text">proprietary syntax</a></p>
+<p>This has a significant impact for creation of general web sites.</p>
+</section>
 </section>
 
 
@@ -501,7 +520,7 @@ for (let x=0;x<temp.length;x++) {
 
 
 
-<section class="appendix" id="acknowledgements">
+<!--section class="appendix" id="acknowledgements">
 <h2>Acknowledgements</h2>
 
     <p>Special thanks to the following people who contributed to this document (contributors' names listed in in alphabetic order).</p>
@@ -509,6 +528,6 @@ for (let x=0;x<temp.length;x++) {
     <p class="acknowledgement">This Person, That Person, etc</p>
 
     <p data-lang="en">Please find the latest info of the contributors at the <a href="https://github.com/w3c/hlreq/graphs/contributors">GitHub contributors list</a>.</p>
-  </section>
+  </section-->
 </body>
 </html>
