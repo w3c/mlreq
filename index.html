@@ -128,39 +128,15 @@
 <section id="h_script_overview">
 <h2>Mongolian Script Overview</h2>
     <p>This section introduces the Mongolian script in general terms, providing some context and terminology that is useful in the remainder of the document. If possible, it's best not to introduce actual requirements in this section, but to leave those and detailed descriptions of expected typography to the sections that follow.</p>
-    <p class="prompt">Is the script an alphabet, abugida, abjad, syllabary, etc? What are the basic set of characters for major languages written in the script? How does the script work? Are glyphs in the script regularly joined up, as in Arabic, or not? Are there other special features, such as stacking, syllabic clusters and conjuncts, etc. Is there a set of characters used for special purposes, such as transcription? Are multiple scripts used? </p>
-    <p class="prompt">What are the basic directional features of the script? Is the script written right-to-left, or bidirectionally? Is is written vertically? If so, can it also be written horizontally, what is the frequency with which it is written one way or the other, and which side is the first line on?</p>
-    <p class="prompt"> Are there special considerations about page layout that should be described briefly at this point, eg. Japanese kihon-hanmen?</p>
-  </section>
+<p>TBD</p>
+</section>
 
   <section id="h_characters_and_phrases">
     <h2>Characters and phrases</h2>
-    <p class="prompt">The following is placeholder text, aimed to give suggestions for content. The questions are only prompts, to help the editor think of topics to address. Actual content will depend on the needs of the script being described. Change and reorganize sections as headings and needed.</p>
-    <section id="h_fonts">
-      <h3>Fonts and font styles</h3>
-      <p class="prompt">What are key fonts and or font styles used for this script? Do italic fonts lean in the right direction? Is synthesised italicisation problematic? Are there standard fallback fonts in use in browsers, and if so do they match expectations? Does the script use fixed-width font glyphs, proportionally-spaced fonts, or a combination? <a href="index#fonts">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afonts%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
-
-
-
-<section id="h_glyphs">
-    <h3>Glyph control</h3>
-    <p class="prompt">Does the script in question require additional features to support alterations to the position or shape of glyphs, for example adjusting the distance between the base text and diacritics, or changing the glyphs used in a systematic way?  <a href="../index#glyphs_diacritics">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Atype-info-request">check for currently needed data</a>.</p>
-</section>
-
-
-<section id="h_cursive">
-    <h3>Cursive text</h3>
-    <p class="prompt"> If this script is cursive (eg. Arabic, N'Ko, Syriac, Mongolian, etc), are there problems or needed features related to the handling of cursive text? Do cursive links break if parts of a word are marked up or styled? Do Unicode joiner and non-joiner characters behave as expected?  <a href="https://www.w3.org/TR/typography/#cursive">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Atype-info-request">check for currently needed data</a>.</p>
-</section>
-
-
-    <section id="h_punctuation">
-      <h3>Punctuation</h3>
-      <p class="prompt">What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking, etc.) <a href="index#punctuation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apunctuation%20label%3Ainfo-req">check for currently needed data</a>.</p>
-
-      <section id="punctuation_rules">
-      <h4>Punctuation rules</h4>
+<section id="h_punctuation">
+  <h3>Punctuation</h3>
+<section id="punctuation_rules">
+<h4>Punctuation rules</h4>
       <p>There are some specific requirements while using the Mongolian punctuation:</p>
 <ol>
 <li>Commas, periods, exclamation marks, question marks, or colons cannot be used at the beginning of a line.</li>
@@ -205,33 +181,16 @@
 <figcaption>Incorrect processing.</figcaption>
 </figure>
 </div>
-<p>&nbsp;</p>
-
 </section>
-    </section>
-
-    <section id="h_quotations">
-    <h3>Quotations</h3>
-      <p class="prompt">What is the expected behaviour for quotations marks, especially when nested? Should block quotes be indented or handled specially? <a href="index#quotations">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aquotations%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
-    <section id="h_symbols">
-      <h3>Symbols</h3>
-      <p class="prompt">Does the script use special symbols that are worth noting, eg. head marks in Tibetan?</p>
-    </section>
 
-<section id="h_digits">
-      <h3>Numbers, dates, etc.</h3>
-      <p class="prompt">Does the script have its own set of number digits? How are they used, and how frequently? Does the numbering system use base-10, or some other type of base? Does it have special formatting patterns (eg. 12,34,000 in India). What about date/time formats and selection – are non-Gregorian calendars used? How are percent signs used, and do numbers have special decorations (like in Ethiopic or Syriac)?</p>
-    </section>
 
-    <section id="h_segmentation">
+
+  <section id="h_segmentation">
       <h3>Text boundaries &amp; selection</h3>
-      <p class="prompt">What are the basic units of the text, and how are they demarcated, eg. characters, character sequences, syllables, or words?  Are spaces or different symbols used between 'words'? Is it important to treat clusters of characters as a single unit? What should happen if you double- or triple-click in the text, whether or not 'words' are separated by spaces? <a href="index#graphemes">See available information</a>.</p>
-
-
-      <section id="selection_rules">
-      <h4>Selection rules</h4>
+<section id="selection_rules">
+<h4>Selection rules</h4>
       <p>Inline selected text must overlap the Mongolian baseline, as shown in <a href="#fig_selection_single_line"></a>. Multi-line selection must follow the writing direction of the Mongolian script, i.e., text direction from top to bottom and from left to right, as shown in <a href="#fig_selection_multiline"></a>.</p>
     <figure id="fig_selection_single_line">
     <p><img src="images/selection_single_line.png" alt=" "/></p>
@@ -278,25 +237,12 @@
 
     </section>
 
-    <section id="h_transforms">
-    <h3>Transforming characters</h3>
-      <p class="prompt">What transformations does your script need? For example, does your script convert letters to uppercase, capitalised and lowercase alternatives? Do you need to to convert between half-width and full-width presentation forms? <a href="index#transforming_characters">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acharacter-transforms%20label%3Ainfo-req">check for currently needed data</a>.</p>
-</section>
 
-    <section id="h_inline_spacing">
-      <h3>Inter-character spacing</h3>
-      <p class="prompt">Some scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts.  Can you provide information? Are there requirements for this script that we should add? <span class="status_prompt"> (For justification related spacing, see below.)</span> See <a href="index#letter_spacing">available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-spacing%20label%3Ainfo-req">check for currently needed data</a>.</p>
-   </section>
 
-    <section id="h_ruby">
-      <h3>Ruby annotation</h3>
-      <p class="prompt">Are ruby annotations used in this script/language? If so, how? <a href="index#ruby_annotation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aruby%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
 
-    <section id="h_text_decoration">
+  <section id="h_text_decoration">
       <h3>Text decoration</h3>
-      <p class="prompt">Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the position relative to the text may vary depending on the script.  <span class="status_prompt"> Do you need support for special line shapes or widths? </span>What about vertical text? <a href="index#text_decoration">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    <p>The “right line” in Mongolian writing is to the right of the text, and is used similarly to the underline of horizontal English and Chinese text. The “left line” is to the left of the text, and is used similarly to the overline of horizontal English and Chinese text. The strikethrough is a baseline-centered vertical line as shown in <a href="#fig_text_decoration"></a>.</p>
+<p>The “right line” in Mongolian writing is to the right of the text, and is used similarly to the underline of horizontal English and Chinese text. The “left line” is to the left of the text, and is used similarly to the overline of horizontal English and Chinese text. The strikethrough is a baseline-centered vertical line as shown in <a href="#fig_text_decoration"></a>.</p>
     <figure id="fig_text_decoration">
     <p><img src="images/text_decoration.png" alt=" "/></p>
     <figcaption>Illustration of the right line, the left line and the strikethrough.</figcaption>
@@ -313,16 +259,8 @@
     </figure>
 </section>
 
-    <section id="h_emphasis">
-      <h3>Emphasis &amp; highlighting</h3>
-      <p class="prompt">Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. If this applies to this script/language, how is it done? <a href="index#emphasis">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
 
 
-<section id="bidi">
-<h3>Bidirectional text</h3>
-    <p class="prompt">If this script runs right-to-left, are there any special requirements when handling that? What about numbers and expressions – do they run rtl or ltr? <a href="https://www.w3.org/TR/typography/#bidirectional_text_direction">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Abidi%20label%3Atype-info-request">check for currently needed data</a>.    </p>
-</section>
 
 
 
@@ -331,10 +269,8 @@
 
 <section id="otherinline">
     <h3>Other inline features</h3>
-    <p class="prompt">Does the script/language have special ways of representing inline notes (such as wakiten or kumimoji in Japanese) or other special inline features that need to be supported? <a href="https://www.w3.org/TR/typography/#other_inline_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-    <section id="width_height_spacing">
-    <h4>Mongolian text width, height and spacing</h4>
+<section id="width_height_spacing">
+<h4>Mongolian text width, height and spacing</h4>
     <p>Due to the different height of Mongolian text, in order to ensure that every character is in  fully displayed and the whole word looks beautiful, the height of each letter must keep in balance. The spaces between words must be different from the common gaps before suffixes, whose code point is <span class="codepoint" translate="no"><span class="uname">U+202F NARROW NO-BREAK SPACE</span></span>. See <a href="#fig_width_height_spacing"></a>:</p>
     <figure id="fig_width_height_spacing">
     <p><img src="images/width_height_spacing.png" alt=" "/></p>
@@ -355,8 +291,7 @@
 
     <section id="h_line_breaking">
       <h3>Line breaking</h3>
-      <p class="prompt">What are the important features about how  script wraps when it hits the end of a line?   Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan and Javanese)? What characters should not appear at the end or start of a line, and what should be done to prevent that? <a href="index#line_breaking">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Ainfo-req">check for currently needed data</a>.</p>
-      <p>Line-breaking should not split words. <a href="#fig_newline_correct"></a> shows  correct line-breaking, without breaking the Mongolian words. <a href="#fig_newline_incorrect"></a> shows incorrect line-breaking for “<img src="images/text001.png" alt=""/>” and “<img src="images/text002.png" alt=""/>”.</p>
+<p>Line-breaking should not split words. <a href="#fig_newline_correct"></a> shows  correct line-breaking, without breaking the Mongolian words. <a href="#fig_newline_incorrect"></a> shows incorrect line-breaking for “<img src="images/text001.png" alt=""/>” and “<img src="images/text002.png" alt=""/>”.</p>
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
 <figure id="fig_newline_correct">
 <p><img src="images/newline_correct.png"/></p>
@@ -369,20 +304,14 @@
 </div>
     </section>
 
-    <section id="h_hyphenation">
-      <h3>Hyphenation</h3>
-      <p class="prompt">Is hyphenation used for your script, or something else? If hyphenation is used, where should the hyphen appear? <a href="index#hyphenation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ahyphenation%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
-
-    <section id="h_justification">
-      <h3>Justification &amp; line-end alignment</h3>
-      <p class="prompt"> Is it normal to have flush lines down both sides of the text body (ie. full justification)? If so, what rules are used by the script to resolve the positioning of characters on a line? Does the script conform to a grid pattern?
-        Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? <a href="index#justification">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
 
 
-    <section id="h_textalign">
-      <h3>Text alignment</h3>
+
+
+
+
+<section id="h_textalign">
+<h3>Text alignment</h3>
       <p>Text alignment includes &quot;left alignment&quot;, &quot;horizontal centering&quot;, and “right alignment ”, as well as “top alignment”, “vertical centering”, “bottom alignment”and “top-bottom alignment”. </p>
 <p>&quot;Left alignment &quot;, &quot;horizontal centering&quot; and “right alignment” are the alignment rules that apply inside a line. “Top alignment”, “horizontal centering”, “bottom alignment” and “top-bottom alignment” are the alignment rules in a page or a paragraph of a multi-line text. </p>
 <p>Among &quot;left alignment&quot;, &quot;horizontal centering&quot; and “right alignment”, “horizontal centering” is a default option which means that the Mongolian text will align based on its baseline  axis. “Left alignment” means that the text will move left  a certain distance, which shows obvious differences compared with the text after setting “horizontal center”. “Right alignment” means that the text will move right  a certain distance after, which shows obvious differences compared with the text after setting “horizontal center”.</p>
@@ -404,15 +333,13 @@
 
 
 
-  <section id="h_initial_letter">
-    <h3>Initial letter styling</h3>
-    <p class="prompt">Does the script/language apply special styling of the initial letter of a line or paragraph, such as for drop caps? If so, what are the rules for positioning: what is the size relationship between the large letter and the lines alongide? where does the large letter anchor relative to the lines alongside? is it normal to include initial quote marks in the large letter? is the large letter really a syllable? etc. <a href="index#initial_letter">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainitial-letter%20label%3Ainfo-req">check for currently needed data</a>.</p>
-  </section>
 
-  <section id="h_baselines">
-    <h3>Baselines</h3>
-    <p class="prompt">What are the requirements for baseline alignment between mixed scripts and in general? <a href="index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    <p>Mongolian is aligned to a baseline that runs down the center of the writing, and all text is aligned to this baseline  as shown in <a href="#fig_baselines"></a>:</p>
+
+
+
+<section id="h_baselines">
+<h3>Baselines</h3>
+<p>Mongolian is aligned to a baseline that runs down the center of the writing, and all text is aligned to this baseline  as shown in <a href="#fig_baselines"></a>:</p>
     <figure id="fig_baselines">
     <p><img src="images/baselines.png" alt=" "/></p>
     <figcaption>The aligning baseline for Mongolian.</figcaption>
@@ -449,14 +376,12 @@
   <figcaption>The mixed arrangement of Mongolian and Chinese.</figcaption>
   </figure>
 </section>
-  </section>
-
-  <section id="h_other_paragraph">
-    <h3>Other paragraph features</h3>
-    <p class="prompt">In this script/language, is the first line of text typically indented at the start of a paragraph? Are there other features of paragraph design that are peculiar to your script? <a href="index#other_para_features">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Ainfo-req">check for currently needed data</a>.</p>
-  </section>
-
 </section>
+</section>
+
+
+
+
 
   <section id="h_pages">
   <h2>Layout &amp; pages</h2>
@@ -523,17 +448,12 @@
 
 
 
- <section id="bidilayout">
-    <h3>Bidirectional layout</h3>
-    <p class="prompt">If this is a RTL or vertically-set writing system, how do you specify the location of objects, text, etc. relative to the flow? Is content mirror-imaged completely in layouts? What other aspects of layout are affected by direction? <a href="https://www.w3.org/TR/typography/#direction_agnostic">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Abidi%20label%3Atype-info-request">check for currently needed data</a>.</p>
-  </section>
 
 
 
 <section id="h_vertical_text">
     <h3>Vertical text</h3>
-    <p class="prompt">What are the requirements for vertically oriented text?  What about if you mix vertical text with scripts that are normally only horizontal? Is it normal to use different characters in vertical vs. horizontal text? Do you expect short numbers, acronyms, etc to run horizontally within a vertical line (tate chu yoko)? <a href="index#vertical_text">See available information</a>.</p>
-    <p>The Mongolian writing direction is shown in <a href="#fig_writing_direction"></a>.</p>
+<p>The Mongolian writing direction is shown in <a href="#fig_writing_direction"></a>.</p>
     <figure id="fig_writing_direction">
     <p><img src="images/writing_direction.png" alt=" "/></p>
     <figcaption>Mongolian writing direction.</figcaption>
@@ -553,10 +473,6 @@
 
 
 
-  <section id="h_notes">
-    <h3>Notes, footnotes, etc</h3>
-    <p class="prompt">Does your script have special requirements for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture? <a href="index#notes_footnotes">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Anotes-footnotes%20label%3Ainfo-req">check for currently needed data</a>.</p>
-    </section>
 
     <section id="h_page_numbering">
     <h3>Page numbering, running headers, etc</h3>
@@ -631,10 +547,8 @@
 
     <section id="h_pagination">
     <h3>More page layout &amp; pagination</h3>
-    <p class="prompt">Some cultures define page areas and page progression direction very differently from those in the West (eg. kihon hanmen in Japanese). Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR? <a href="index#more_page_layout_and_pagination">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apagination%20label%3Ainfo-req">check for currently needed data</a>.</p>
-
-    <section id="mixed_media">
-    <h4>Mixed arrangement of text and illustrations  (or other non-text objects)</h4>
+<section id="mixed_media">
+<h4>Mixed arrangement of text and illustrations  (or other non-text objects)</h4>
     <p>The illustrations here include ordinary picture formats, textboxes, charts, media objects and so on, all of which are called illustrations in what follows. There are many ways (as shown in <a href="#fig_mixed_media"></a>) of mixing the arrangements of text and illustrations but, no matter which way is used, some principles need to be obeyed.</p>
 <ol>
 <li>The illustration cannot be rotated, that is, the original illustration is inserted just as it is. The illustration cannot be rotated into the vertical one just because of vertical text.</li>
@@ -645,11 +559,15 @@
     <figcaption>Mixed arrangement of text and illustrations (or other non-text objects).</figcaption>
     </figure>
 </section>
-   </section>
-
 </section>
-  <section class="appendix" id="glossary">
-  <h2>Glossary</h2>
+</section>
+
+
+
+
+
+<!--section class="appendix" id="glossary">
+<h2>Glossary</h2>
 
     <table class="glossary">
       <thead>
@@ -676,7 +594,7 @@
         </tr>
       </tbody>
     </table>
-</section>
+</section-->
 
 
 <section class="appendix" id="css_suggestions">
@@ -701,7 +619,7 @@
 
 
 
-  <section class="appendix" id="acknowledgements">
+  <!--section class="appendix" id="acknowledgements">
   <h2>Acknowledgements</h2>
 
     <p>Special thanks to the following people who contributed to this document (contributors' names listed in in alphabetic order).</p>
@@ -709,6 +627,6 @@
     <p class="acknowledgement">This Person, That Person, etc</p>
 
     <p data-lang="en">Please find the latest info of the contributors at the <a href="https://github.com/w3c/mlreq/graphs/contributors">GitHub contributors list</a>.</p>
-  </section>
+  </section-->
 </body>
 </html>
