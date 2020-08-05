@@ -15,6 +15,9 @@ For more details about scope, deliverables, work methods, etc., see the [group's
 - [Mongolian variant forms](https://r12a.github.io/mongolian-variants/) (tracks work on variant encoding discussions)
 - [Encoding discussion document log](https://w3c.github.io/mlreq/variants/document-log.html)
 
+### Related documents
+- [Ready-made Counter Styles](https://www.w3.org/TR/predefined-counter-styles/)
+
 
 ### Feedback
 Please use the [GitHub issue list](https://github.com/w3c/mlreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
