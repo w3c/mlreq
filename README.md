@@ -12,7 +12,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 
 ### Documents
-- [**Mongolian Gap Analysis**](https://www.w3.org/TR/mong-gap) • [*Editor's draft*](https://www.w3.org/International/mlreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/gap-analysis/index.html) • [*Edit on GitHub*](https://github.com/w3c/mlreq/labels/doc%3Among)
+- [**Mongolian Gap Analysis**](https://www.w3.org/TR/mong-gap) • [*Editor's draft*](https://www.w3.org/International/mlreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/gap-analysis/index.html) • [*Edit/comment on GitHub*](https://github.com/w3c/mlreq/labels/doc%3Among)
 - [**Mongolian Layout Requirements**](https://www.w3.org/TR/mlreq) • [*Editor's draft*](https://www.w3.org/International/mlreq/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/index.html)
 
 
