@@ -11,6 +11,17 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 [GitHub repo](https://github.com/w3c/mlreq) • [Discussion threads](https://github.com/w3c/mlreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=mlreq) (with mlreq filter) • [Charter](https://www.w3.org/International/mlreq/charter/)
 
 
+---
+## Help wanted! ###
+**We're looking for information about this writing system. Follow the link for specific questions.**
+
+**[Traditional Mongolian](https://github.com/w3c/mlreq/issues?q=is%3Aissue+is%3Aopen+label%3Aquestion)**
+
+---
+
+
+
+
 ### Documents
 - [**Mongolian Gap Analysis**](https://www.w3.org/TR/mong-gap) • [*Editor's draft*](https://www.w3.org/International/mlreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/gap-analysis/index.html) • [*Edit/comment on GitHub*](https://github.com/w3c/mlreq/labels/doc%3Among)
 - [**Mongolian Layout Requirements**](https://www.w3.org/TR/mlreq) • [*Editor's draft*](https://www.w3.org/International/mlreq/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/index.html)
