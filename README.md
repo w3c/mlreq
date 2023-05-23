@@ -23,8 +23,16 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 
 ### Documents
-- [**Mongolian Gap Analysis**](https://www.w3.org/TR/mong-gap) • [*Editor's draft*](https://www.w3.org/International/mlreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/gap-analysis/index.html) • [*Edit/comment on GitHub*](https://github.com/w3c/mlreq/labels/doc%3Among)
+- [**Mongolian Gap Analysis**](https://www.w3.org/TR/mong-gap) • [*Editor's draft*](https://www.w3.org/International/mlreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/gap-analysis/index.html)
 - [**Mongolian Layout Requirements**](https://www.w3.org/TR/mlreq) • [*Editor's draft*](https://www.w3.org/International/mlreq/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/index.html)
+
+
+
+### Discussions
+- **Mongolian** • [*Questions*](https://github.com/w3c/mlreq/issues?q=is%3Aissue+is%3Aopen+label%3Aquestion)
+• [*Gap reports*](https://github.com/w3c/mlreq/labels/doc%3Among)
+• [*Other*](https://github.com/w3c/mlreq/issues?q=is%3Aopen+-label%3Aquestion+-label%3Agap) 
+• [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Amlreq+label%3Aspec-type-issue)
 
 
 ### Related documents
