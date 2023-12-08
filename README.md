@@ -44,14 +44,14 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 ### Feedback
 Please use the [GitHub issue list](https://github.com/w3c/mlreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](https://www.w3.org/International/i18n-activity/guidelines/issues.html).)
 
-Note that the public-i18n-mongolian mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
+Note that the [public-i18n-mongolian](https://lists.w3.org/Archives/Public/public-i18n-mongolian/) mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
 
 **You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
 
 ### Participate
 You can participate in the work at various levels. In order of increasing commitment, these include List subscriber, Participant, Editor, and Chair. [Explore the options](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation.html).
 
-**To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-mongolian-request@w3.org?subject=subscribe) to the [public-i18n-mongolian](https://lists.w3.org/Archives/Public/public-i18n-arabic/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Mongolian writing systems.
+**To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-mongolian-request@w3.org?subject=subscribe) to the [public-i18n-mongolian](https://lists.w3.org/Archives/Public/public-i18n-mongolian/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Mongolian writing systems.
 
 **To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
