@@ -149,7 +149,10 @@ dl.reslinks {
     }
 
 
-
+.reflink {
+    vertical-align: super;
+    font-size: 70%;
+    }
 
 
 
