@@ -22,25 +22,17 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 
 
-### Resource & requirement docs
+### Traditional Mongolian (Hudum)
 - **Mongolian Script Resources** • [DNOTE](https://www.w3.org/TR/mong-lreq) • [*Editor's draft*](https://www.w3.org/International/mlreq/mong/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/mong/)
 - **Mongolian Layout Requirements** • [DNOTE](https://www.w3.org/TR/mlreq) • [*Editor's draft*](https://www.w3.org/International/mlreq/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/index.html)
-
-
-
-### Gap-analysis docs
 - **Mongolian Gap Analysis** • [DNOTE](https://www.w3.org/TR/mong-gap) • [*Editor's draft*](https://www.w3.org/International/mlreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/gap-analysis/index.html)
-
-
-
-### Discussions
-- **Mongolian** • [*Questions*](https://github.com/w3c/mlreq/issues?q=is%3Aissue+is%3Aopen+label%3Aquestion)
+- **Discussions** • [*Questions*](https://github.com/w3c/mlreq/issues?q=is%3Aissue+is%3Aopen+label%3Aquestion)
 • [*Gap reports*](https://github.com/w3c/mlreq/labels/doc%3Among)
 • [*Other*](https://github.com/w3c/mlreq/issues?q=is%3Aopen+-label%3Aquestion+-label%3Agap) 
 • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Amlreq+label%3Aspec-type-issue)
 
 
-### Related documents
+### Other documents
 - [Mongolian Variant Forms](https://r12a.github.io/mongolian-variants/) (tracked former discussions about variant glyph standardisation)
 - [Encoding discussion document log](https://w3c.github.io/mlreq/variants/document-log.html)
 - [Ready-made Counter Styles](https://www.w3.org/TR/predefined-counter-styles/)
