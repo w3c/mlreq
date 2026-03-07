@@ -21,7 +21,6 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 
 
-
 ### Traditional Mongolian (Hudum)
 - **Mongolian Script Resources** • [DNOTE](https://www.w3.org/TR/mong-lreq) • [*Editor's draft*](https://www.w3.org/International/mlreq/mong/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/mong/)
 - **Mongolian Layout Requirements** • [DNOTE](https://www.w3.org/TR/mlreq) • [*Editor's draft*](https://www.w3.org/International/mlreq/) • [*Latest commits*](https://github.com/w3c/mlreq/commits/gh-pages/index.html)
